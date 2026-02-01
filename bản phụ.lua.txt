@@ -6,8 +6,8 @@ local LocalPlayer = Players.LocalPlayer
 local PlayerGui = LocalPlayer:WaitForChild("PlayerGui")
 
 -- Xóa UI cũ
-if PlayerGui:FindFirstChild("RedzLoadingUI") then
-    PlayerGui.RedzLoadingUI:Destroy()
+if PlayerGui:FindFirstChild("LeonLoadingUI") then
+    PlayerGui.LeonLoadingUI:Destroy()
 end
 
 -- 1. TẠO GUI CHÍNH
@@ -29,7 +29,7 @@ local MainCorner = Instance.new("UICorner")
 MainCorner.CornerRadius = UDim.new(0, 15)
 MainCorner.Parent = MainFrame
 
--- 3. LOGO REDZ
+-- 3. LOGO LEON
 local Logo = Instance.new("ImageLabel")
 Logo.Size = UDim2.new(0, 70, 0, 70)
 Logo.Position = UDim2.new(0.5, -35, 0, -45)
@@ -780,7 +780,7 @@ end
 
 local Fluent = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
 local Window = Fluent:CreateWindow({
-    Title="RedzRoblox",
+    Title="LeonRoblox",
     SubTitle="| Blox Fruit", 
     TabWidth=160, 
     Theme="Apple",
@@ -788,7 +788,7 @@ local Window = Fluent:CreateWindow({
     Size=UDim2.fromOffset(530, 350), 
     MinimizeKey=Enum.KeyCode.End
 })
--- [[ SHΔDØW CORE: REDZ BUTTON PROTOCOL ]]
+-- [[ SHΔDØW CORE: LEON BUTTON PROTOCOL ]]
 
 local screenGui = Instance.new("ScreenGui")
 screenGui.Name = "ControlGUI"
@@ -797,7 +797,7 @@ screenGui.ResetOnSpawn = false
 screenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 
 local toggleButton = Instance.new("ImageButton")
-toggleButton.Name = "RedzToggleButton"
+toggleButton.Name = "LeonToggleButton"
 toggleButton.Size = UDim2.new(0, 50, 0, 50)
 toggleButton.Position = UDim2.new(0.15, 0, 0.15, 0)
 toggleButton.Image = "rbxassetid://114578517500917"
