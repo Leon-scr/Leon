@@ -3665,7 +3665,7 @@ end
 local v466 = loadstring(game:HttpGet("https://pastefy.app/mRGwRAri/raw"))():MakeWindow({
     Title = "LeonRoblox",
     SubTitle = "| Blox Fruit",
-    SaveFolder = "Redz | long lib v5.lua"
+    SaveFolder = "Leon | long lib v5.lua"
 })
 local l_ScreenGui_0 = Instance.new("ScreenGui")
 l_ScreenGui_0.Name = "ControlGUI"
@@ -3674,7 +3674,7 @@ l_ScreenGui_0.Parent = game.CoreGui
 local l_ImageButton_0 = Instance.new("ImageButton")
 l_ImageButton_0.Size = UDim2.new(0, 50, 0, 50)
 l_ImageButton_0.Position = UDim2.new(0.15, 0, 0.15, 0)
-l_ImageButton_0.Image = "rbxassetid://140558103247167"
+l_ImageButton_0.Image = "rbxassetid://133922590481345"
 l_ImageButton_0.BackgroundTransparency = 1
 l_ImageButton_0.Parent = l_ScreenGui_0
 
@@ -3776,19 +3776,19 @@ local _ = v484:AddSection({"discord"})
 v484:AddDiscordInvite({
     Name = "Tham Gia Discord",
     Description = "hiện chưa tạo discord",
-    Logo = "rbxassetid:// 140558103247167",
+    Logo = "rbxassetid:// 133922590481345",
     Invite = " "
 })
 v484:AddDiscordInvite({
     Name = "tiktok",
     Description = "Tiktok",
-    Logo = "rbxassetid:// 140558103247167",
+    Logo = "rbxassetid:// 133922590481345",
     Invite = "tiktok.com/@leondz3011"
 })
 v484:AddDiscordInvite({
     Name = "Youtube",
     Description = "hiện chưa có kênh yt",
-    Logo = "rbxassetid:// 140558103247167",
+    Logo = "rbxassetid:// 133922590481345",
     Invite = ""
 })
 local _ = v485:AddSection({"Select Melee,Sword,Gun,Fruit"})
