@@ -12,7 +12,7 @@ end
 
 -- 1. TẠO GUI CHÍNH
 local ScreenGui = Instance.new("ScreenGui")
-ScreenGui.Name = "RedzLoadingUI"
+ScreenGui.Name = "LeonLoadingUI"
 ScreenGui.DisplayOrder = 999
 ScreenGui.ResetOnSpawn = false 
 ScreenGui.Parent = PlayerGui
@@ -34,7 +34,7 @@ local Logo = Instance.new("ImageLabel")
 Logo.Size = UDim2.new(0, 70, 0, 70)
 Logo.Position = UDim2.new(0.5, -35, 0, -45)
 Logo.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
-Logo.Image = "rbxassetid://114578517500917" 
+Logo.Image = "rbxassetid://80226210743615" 
 Logo.Parent = MainFrame
 
 local LogoCorner = Instance.new("UICorner")
@@ -51,7 +51,7 @@ local Title = Instance.new("TextLabel")
 Title.Size = UDim2.new(1, 0, 0, 50)
 Title.Position = UDim2.new(0, 0, 0.2, 0)
 Title.BackgroundTransparency = 1
-Title.Text = "RedzRoblox"
+Title.Text = "LeonRoblox"
 Title.TextColor3 = Color3.fromRGB(255, 50, 50)
 Title.TextSize = 25
 Title.Font = Enum.Font.GothamBold
@@ -111,9 +111,9 @@ local function RunLoading()
         ---------------------------------------------------------
         
 game:GetService("StarterGui"):SetCore("SendNotification", {
-    Title = "RedzRoblox",
-    Text = "Welcome to RedzRoblox scripts!",
-    Icon = "rbxassetid://114578517500917", -- Sử dụng chính Icon của nút bật tắt
+    Title = "LeonRoblox",
+    Text = "Welcome to LeonRoblox scripts!",
+    Icon = "rbxassetid://80226210743615", -- Sử dụng chính Icon của nút bật tắt
     Duration = 5 -- Hiện trong 5 giây
 })
 
@@ -885,10 +885,10 @@ local Tabs = {
 }
 
 Tabs.Main:AddButton({
-        Title="Link Join Sever Discord",
-        Description=" https://discord.gg/8HDXpyRE",
+        Title="Link tiktok",
+        Description=" tiktok.com/@leondz3011",
         Callback=function()
-            setclipboard(tostring(" https://discord.gg/8HDXpyRE")) 
+            setclipboard(tostring(" tiktok.com/@leondz3011")) 
         end
 })
 Tabs.Main:AddSection("Farm level")
