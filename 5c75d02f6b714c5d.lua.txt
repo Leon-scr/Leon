@@ -1,0 +1,1752 @@
+-- ts file was generated at discord.gg/25ms
+
+local genv = getgenv()
+local fenv = getfenv()
+
+loadstring('<25ms_long_string: 2484bytes> if you need ts message me', 'Luraph', nil)
+loadstring(game:HttpGet('https://pastefy.app/92aQijXI/raw'))()
+loadstring(game:HttpGet('https://pastefy.app/0umL7KLQ/raw'))()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/noguchihyuga/idk/refs/heads/main/abcyxz.lua'))()
+
+local _gamePlayers15 = game.Players
+
+fenv.ply = _gamePlayers15
+
+local _LocalPlayer16 = _gamePlayers15.LocalPlayer
+
+fenv.plr = _LocalPlayer16
+fenv.Root = _LocalPlayer16.Character.HumanoidRootPart
+
+local _call20 = game:GetService('ReplicatedStorage')
+
+fenv.replicated = _call20
+fenv.Lv = game.Players.LocalPlayer.Data.Level.Value
+fenv.TeleportService = game:GetService('TeleportService')
+fenv.TW = game:GetService('TweenService')
+fenv.Lighting = game:GetService('Lighting')
+fenv.Enemies = workspace.Enemies
+fenv.vim1 = game:GetService('VirtualInputManager')
+fenv.vim2 = game:GetService('VirtualUser')
+fenv.TeamSelf = _LocalPlayer16.Team
+fenv.RunSer = game:GetService('RunService')
+fenv.Stats = game:GetService('Stats')
+fenv.Energy = _LocalPlayer16.Character.Energy.Value
+fenv.Boss = {}
+fenv.BringConnections = {}
+fenv.MaterialList = {}
+fenv.NPCList = {}
+fenv.shouldTween = false
+fenv.SoulGuitar = false
+fenv.KenTest = true
+fenv.debug = false
+fenv.Brazier1 = false
+fenv.Brazier2 = false
+fenv.Brazier3 = false
+fenv.Sec = 0.1
+fenv.ClickState = 0
+fenv.Num_self = 25
+
+_LocalPlayer16.PlayerGui:WaitForChild('Main'):WaitForChild('Loading')
+game:IsLoaded()
+wait()
+
+local _ = game.PlaceId
+local _ = game.PlaceId
+
+fenv.World1 = false
+
+local _ = game.PlaceId
+local _ = game.PlaceId
+
+fenv.World2 = false
+
+local _ = game.PlaceId
+local _ = game.PlaceId
+
+fenv.World3 = false
+
+local _ = game.PlaceId
+
+fenv.Dungeon = false
+
+local _ = fenv.World1
+local _ = fenv.World2
+local _ = fenv.World3
+local _ = fenv.Dungeon
+
+fenv.Sea = nil
+fenv.Marines = function(...)
+    _call20.Remotes.CommF_:InvokeServer('SetTeam', 'Marines')
+end
+fenv.Pirates = function(...)
+    _call20.Remotes.CommF_:InvokeServer('SetTeam', 'Pirates')
+end
+
+CFrame.new(-712.8272705078125, 98.5770492553711, 5711.9541015625)
+CFrame.new(-723.4331665039063, 147.42906188964844, 5931.9931640625)
+CFrame.new(7021.50439453125, 55.76270294189453, -730.1290893554688)
+CFrame.new(6625, 378, 244)
+CFrame.new(4692.7939453125, 797.9766845703125, 858.8480224609375)
+CFrame.new(4902, 670, 39)
+CFrame.new(2401, 123, -7589)
+CFrame.new(3588, 229, -7085)
+CFrame.new(-10941, 332, -8760)
+CFrame.new(-11035, 332, -9087)
+CFrame.new(-13446, 413, -7760)
+CFrame.new(-13510, 584, -6987)
+CFrame.new(-11778, 426, -10592)
+CFrame.new(-13282, 496, -9565)
+CFrame.new(-8764, 142, 5963)
+CFrame.new(-10227, 421, 6161)
+CFrame.new(-9579, 6, 6194)
+CFrame.new(-9579, 6, 6194)
+CFrame.new(-1993, 187, -10103)
+CFrame.new(-2215, 159, -10474)
+CFrame.new(-877, 118, -11032)
+CFrame.new(-877, 118, -11032)
+CFrame.new(-2021, 38, -12028)
+CFrame.new(-2024, 38, -12026)
+CFrame.new(-1932, 38, -12848)
+CFrame.new(-1932, 38, -12848)
+CFrame.new(95, 73, -12309)
+CFrame.new(647, 42, -12401)
+CFrame.new(116, 36, -12478)
+CFrame.new(47, 61, -12889)
+CFrame.new(5251, 5, 1111)
+
+fenv.EquipWeapon = function(...)
+    local _135_vararg1 = ...
+
+    _LocalPlayer16.Backpack:FindFirstChild(_135_vararg1)
+
+    local _Humanoid140 = _LocalPlayer16.Character.Humanoid
+
+    _Humanoid140:EquipTool(_LocalPlayer16.Backpack:FindFirstChild(_135_vararg1))
+end
+fenv.weaponSc = function(...)
+    for _150, _150_2 in pairs(_LocalPlayer16.Backpack:GetChildren())do
+        coroutine.yield(true, _150, _150_2)
+    end
+end
+
+hookfunction(require(game:GetService('ReplicatedStorage').Effect.Container.Death), function(...) end)
+hookfunction(require(game:GetService('ReplicatedStorage'):WaitForChild('GuideModule')).ChangeDisplayedNPC, function(...) end)
+hookfunction(function(...)
+    error("invalid argument #2 to 'error' (number expected, got table)")
+end, function(...) end)
+hookfunction(warn, function(...) end)
+workspace:FindFirstChild('Rocks'):Destroy()
+
+local _call180 = game:GetService('Lighting'):FindFirstChild('LightingLayers')
+
+game:GetService('Lighting')
+game:GetService('Lighting')
+_call180:FindFirstChild('DarkFog'):Destroy()
+
+local _workspace_WorldOrigin189 = workspace._WorldOrigin
+local _Foam190 = _workspace_WorldOrigin189['Foam;']
+local _workspace_WorldOrigin191 = workspace._WorldOrigin
+local _ = _workspace_WorldOrigin191['Foam;']
+
+_Foam190:Destroy()
+
+fenv.gay = nil
+fenv.statsSetings = function(...) end
+fenv.BringEnemy = function(...)
+    local _ = fenv._B
+end
+fenv.Useskills = function(...) end
+
+local _callgetrawmetatable199 = getrawmetatable(game)
+local __namecall200 = _callgetrawmetatable199.__namecall
+
+setreadonly(_callgetrawmetatable199, false)
+newcclosure(function(...)
+    tostring(getnamecallmethod())
+
+    local _call205 = __namecall200(...)
+
+    return _call205
+end)
+
+_callgetrawmetatable199.__namecall = function(...)
+    tostring(getnamecallmethod())
+
+    local _call209 = __namecall200(...)
+
+    return _call209
+end
+fenv.GetConnectionEnemies = function(...)
+    for _213, _213_2 in pairs(_call20:GetChildren())do
+        coroutine.yield(true, _213, _213_2)
+    end
+    for _219, _219_2 in next, game.Workspace.Enemies:GetChildren()do
+        coroutine.yield(true, _219, _219_2)
+    end
+end
+fenv.LowCpu = function(...)
+    local _gameLighting223 = game.Lighting
+    local _Terrain224 = game.Workspace.Terrain
+
+    _Terrain224.WaterWaveSize = 0
+    _Terrain224.WaterWaveSpeed = 0
+    _Terrain224.WaterReflectance = 0
+    _Terrain224.WaterTransparency = 0
+    _gameLighting223.GlobalShadows = false
+    _gameLighting223.FogEnd = 9000000000
+    _gameLighting223.Brightness = 0
+
+    local _ = fenv.settings
+
+    error('Luraph Script:559: line 3: attempt to call a nil value')
+end
+fenv.CheckF = function(...)
+    local _ = fenv.GetBP
+
+    error('Luraph Script:586: line 3: attempt to call a nil value')
+end
+fenv.CheckBoat = function(...)
+    for _232, _232_2 in pairs(workspace.Boats:GetChildren())do
+        coroutine.yield(true, _232, _232_2)
+    end
+
+    return false
+end
+fenv.CheckEnemiesBoat = function(...)
+    for _238, _238_2 in pairs(workspace.Enemies:GetChildren())do
+        coroutine.yield(true, _238, _238_2)
+    end
+
+    return false
+end
+fenv.CheckPirateGrandBrigade = function(...)
+    for _244, _244_2 in pairs(workspace.Enemies:GetChildren())do
+        coroutine.yield(true, _244, _244_2)
+    end
+
+    return false
+end
+fenv.CheckShark = function(...)
+    for _250, _250_2 in pairs(workspace.Enemies:GetChildren())do
+        coroutine.yield(true, _250, _250_2)
+    end
+
+    return false
+end
+fenv.CheckTerrorShark = function(...)
+    for _256, _256_2 in pairs(workspace.Enemies:GetChildren())do
+        coroutine.yield(true, _256, _256_2)
+    end
+
+    return false
+end
+fenv.CheckPiranha = function(...)
+    for _262, _262_2 in pairs(workspace.Enemies:GetChildren())do
+        coroutine.yield(true, _262, _262_2)
+    end
+
+    return false
+end
+fenv.CheckFishCrew = function(...)
+    for _268, _268_2 in pairs(workspace.Enemies:GetChildren())do
+        coroutine.yield(true, _268, _268_2)
+    end
+
+    return false
+end
+fenv.CheckHauntedCrew = function(...)
+    for _274, _274_2 in pairs(workspace.Enemies:GetChildren())do
+        coroutine.yield(true, _274, _274_2)
+    end
+
+    return false
+end
+fenv.CheckSeaBeast = function(...)
+    workspace.SeaBeasts:FindFirstChild('SeaBeast1')
+
+    return true
+end
+fenv.CheckLeviathan = function(...)
+    workspace.SeaBeasts:FindFirstChild('Leviathan')
+
+    return true
+end
+fenv.UpdStFruit = function(...)
+    for _288, _288_2 in next, _LocalPlayer16.Backpack:GetChildren()do
+        coroutine.yield(true, _288, _288_2)
+    end
+end
+fenv.collectFruits = function(...)
+    local _ = _LocalPlayer16.Character
+
+    for _294, _294_2 in pairs(workspace:GetChildren())do
+        coroutine.yield(true, _294, _294_2)
+    end
+end
+fenv.Getmoon = function(...) end
+fenv.DropFruits = function(...)
+    for _301, _301_2 in next, _LocalPlayer16.Backpack:GetChildren()do
+        coroutine.yield(true, _301, _301_2)
+    end
+    for _306, _306_2 in pairs(_LocalPlayer16.Character:GetChildren())do
+        coroutine.yield(true, _306, _306_2)
+    end
+end
+fenv.GetBP = function(...)
+    local _308_vararg1 = ...
+
+    return _LocalPlayer16.Backpack:FindFirstChild(_308_vararg1)
+end
+fenv.GetIn = function(...)
+    for _317, _317_2 in pairs(_call20.Remotes.CommF_:InvokeServer('getInventory'))do
+        coroutine.yield(true, _317, _317_2)
+    end
+
+    return false
+end
+fenv.GetM = function(...)
+    for _324, _324_2 in pairs(_call20.Remotes.CommF_:InvokeServer('getInventory'))do
+        coroutine.yield(true, _324, _324_2)
+    end
+
+    return 0
+end
+fenv.GetWP = function(...)
+    for _331, _331_2 in pairs(_call20.Remotes.CommF_:InvokeServer('getInventory'))do
+        coroutine.yield(true, _331, _331_2)
+    end
+
+    return false
+end
+fenv.getInfinity_Ability = function(...) end
+fenv.Hop = function(...)
+    for _338, _338_2 in next, _call20.__ServerBrowser:InvokeServer(44)do
+        coroutine.yield(true, _338, _338_2)
+    end
+    for _343, _343_2 in next, _call20.__ServerBrowser:InvokeServer(45)do
+        coroutine.yield(true, _343, _343_2)
+    end
+    for _348, _348_2 in next, _call20.__ServerBrowser:InvokeServer(46)do
+        coroutine.yield(true, _348, _348_2)
+    end
+    for _353, _353_2 in next, _call20.__ServerBrowser:InvokeServer(47)do
+        coroutine.yield(true, _353, _353_2)
+    end
+    for _358, _358_2 in next, _call20.__ServerBrowser:InvokeServer(48)do
+        coroutine.yield(true, _358, _358_2)
+    end
+    for _363, _363_2 in next, _call20.__ServerBrowser:InvokeServer(49)do
+        coroutine.yield(true, _363, _363_2)
+    end
+    for _368, _368_2 in next, _call20.__ServerBrowser:InvokeServer(50)do
+        coroutine.yield(true, _368, _368_2)
+    end
+    for _373, _373_2 in next, _call20.__ServerBrowser:InvokeServer(51)do
+        coroutine.yield(true, _373, _373_2)
+    end
+    for _378, _378_2 in next, _call20.__ServerBrowser:InvokeServer(52)do
+        coroutine.yield(true, _378, _378_2)
+    end
+    for _383, _383_2 in next, _call20.__ServerBrowser:InvokeServer(53)do
+        coroutine.yield(true, _383, _383_2)
+    end
+    for _388, _388_2 in next, _call20.__ServerBrowser:InvokeServer(54)do
+        coroutine.yield(true, _388, _388_2)
+    end
+    for _393, _393_2 in next, _call20.__ServerBrowser:InvokeServer(55)do
+        coroutine.yield(true, _393, _393_2)
+    end
+    for _398, _398_2 in next, _call20.__ServerBrowser:InvokeServer(56)do
+        coroutine.yield(true, _398, _398_2)
+    end
+    for _403, _403_2 in next, _call20.__ServerBrowser:InvokeServer(57)do
+        coroutine.yield(true, _403, _403_2)
+    end
+    for _408, _408_2 in next, _call20.__ServerBrowser:InvokeServer(58)do
+        coroutine.yield(true, _408, _408_2)
+    end
+    for _413, _413_2 in next, _call20.__ServerBrowser:InvokeServer(59)do
+        coroutine.yield(true, _413, _413_2)
+    end
+    for _418, _418_2 in next, _call20.__ServerBrowser:InvokeServer(60)do
+        coroutine.yield(true, _418, _418_2)
+    end
+    for _423, _423_2 in next, _call20.__ServerBrowser:InvokeServer(61)do
+        coroutine.yield(true, _423, _423_2)
+    end
+    for _428, _428_2 in next, _call20.__ServerBrowser:InvokeServer(62)do
+        coroutine.yield(true, _428, _428_2)
+    end
+    for _433, _433_2 in next, _call20.__ServerBrowser:InvokeServer(63)do
+        coroutine.yield(true, _433, _433_2)
+    end
+    for _438, _438_2 in next, _call20.__ServerBrowser:InvokeServer(64)do
+        coroutine.yield(true, _438, _438_2)
+    end
+    for _443, _443_2 in next, _call20.__ServerBrowser:InvokeServer(65)do
+        coroutine.yield(true, _443, _443_2)
+    end
+    for _448, _448_2 in next, _call20.__ServerBrowser:InvokeServer(66)do
+        coroutine.yield(true, _448, _448_2)
+    end
+    for _453, _453_2 in next, _call20.__ServerBrowser:InvokeServer(67)do
+        coroutine.yield(true, _453, _453_2)
+    end
+    for _458, _458_2 in next, _call20.__ServerBrowser:InvokeServer(68)do
+        coroutine.yield(true, _458, _458_2)
+    end
+    for _463, _463_2 in next, _call20.__ServerBrowser:InvokeServer(69)do
+        coroutine.yield(true, _463, _463_2)
+    end
+    for _468, _468_2 in next, _call20.__ServerBrowser:InvokeServer(70)do
+        coroutine.yield(true, _468, _468_2)
+    end
+    for _473, _473_2 in next, _call20.__ServerBrowser:InvokeServer(71)do
+        coroutine.yield(true, _473, _473_2)
+    end
+    for _478, _478_2 in next, _call20.__ServerBrowser:InvokeServer(72)do
+        coroutine.yield(true, _478, _478_2)
+    end
+    for _483, _483_2 in next, _call20.__ServerBrowser:InvokeServer(73)do
+        coroutine.yield(true, _483, _483_2)
+    end
+    for _488, _488_2 in next, _call20.__ServerBrowser:InvokeServer(74)do
+        coroutine.yield(true, _488, _488_2)
+    end
+    for _493, _493_2 in next, _call20.__ServerBrowser:InvokeServer(75)do
+        coroutine.yield(true, _493, _493_2)
+    end
+    for _498, _498_2 in next, _call20.__ServerBrowser:InvokeServer(76)do
+        coroutine.yield(true, _498, _498_2)
+    end
+    for _503, _503_2 in next, _call20.__ServerBrowser:InvokeServer(77)do
+        coroutine.yield(true, _503, _503_2)
+    end
+    for _508, _508_2 in next, _call20.__ServerBrowser:InvokeServer(78)do
+        coroutine.yield(true, _508, _508_2)
+    end
+    for _513, _513_2 in next, _call20.__ServerBrowser:InvokeServer(79)do
+        coroutine.yield(true, _513, _513_2)
+    end
+    for _518, _518_2 in next, _call20.__ServerBrowser:InvokeServer(80)do
+        coroutine.yield(true, _518, _518_2)
+    end
+end
+
+local _call522 = Instance.new('Part', workspace)
+
+_call522.Size = Vector3.new(1, 1, 1)
+_call522.Name = 'Rip_Indra'
+_call522.Anchored = true
+_call522.CanCollide = false
+_call522.CanTouch = false
+_call522.Transparency = 1
+
+local _call527 = workspace:FindFirstChild(_call522.Name)
+local _ = _call527 == _call522
+
+_call527:Destroy()
+task.spawn(function(...)
+    task.wait()
+
+    local _ = _call522.Parent == workspace
+
+    genv.OnFarm = false
+
+    task.wait()
+
+    local _ = _call522.Parent == workspace
+
+    genv.OnFarm = false
+
+    task.wait()
+
+    local _ = _call522.Parent == workspace
+
+    genv.OnFarm = false
+
+    task.wait()
+
+    local _ = _call522.Parent == workspace
+
+    genv.OnFarm = false
+
+    task.wait()
+
+    local _ = _call522.Parent == workspace
+
+    genv.OnFarm = false
+
+    task.wait()
+
+    local _ = _call522.Parent == workspace
+
+    genv.OnFarm = false
+
+    task.wait()
+
+    local _ = _call522.Parent == workspace
+
+    genv.OnFarm = false
+
+    task.wait()
+
+    local _ = _call522.Parent == workspace
+
+    genv.OnFarm = false
+
+    task.wait()
+
+    local _ = _call522.Parent == workspace
+
+    genv.OnFarm = false
+
+    task.wait()
+
+    local _ = _call522.Parent == workspace
+
+    genv.OnFarm = false
+
+    task.wait()
+
+    local _ = _call522.Parent == workspace
+
+    genv.OnFarm = false
+
+    task.wait()
+
+    local _ = _call522.Parent == workspace
+
+    genv.OnFarm = false
+
+    task.wait()
+
+    local _ = _call522.Parent == workspace
+
+    genv.OnFarm = false
+
+    task.wait()
+
+    local _ = _call522.Parent == workspace
+
+    genv.OnFarm = false
+
+    task.wait()
+    error('Luraph Script:810: internal 557: <25ms: infinitelooperror>')
+end)
+task.spawn(function(...)
+    local _LocalPlayer567 = game.Players.LocalPlayer
+
+    task.wait()
+
+    local _ = _LocalPlayer567.Character
+    local _ = _LocalPlayer567.Character.PrimaryPart
+
+    error('Luraph Script:826: internal 557: <25ms: infinitelooperror>')
+end)
+CFrame.new(-16271.126, 25.5847301, 1371.98755, 0.999396622, -5.78875188e-8, -0.0347310975, 5.52972779e-8, 1, -8.7544322e-8, 0.034731105, 8.28877091e-8, 0.999396741)
+CFrame.new(10512.3623, -1347.92188, 9544.56836, 0.126544863, 5.43846967e-9, -0.991960883, 2.58130051e-9, 1, 5.81184212e-9, 0.991960883, -3.29600791e-9, 0.126544863)
+
+fenv.tp_ = function(...)
+    local _578_vararg1 = ...
+    local _Character579 = _LocalPlayer16.Character
+
+    _Character579:FindFirstChild('HumanoidRootPart')
+
+    local _call595 = game:GetService('TweenService'):Create(_call522, TweenInfo.new(((_578_vararg1.Position - _Character579.HumanoidRootPart.Position).Magnitude / 300), Enum.EasingStyle.Linear), {CFrame = _578_vararg1})
+
+    _call595:Play()
+    task.spawn(function(...)
+        local _ = _call595.PlaybackState == Enum.PlaybackState.Playing
+    end)
+end
+fenv._tp = function(...)
+    local _605_vararg1 = ...
+    local _ = _LocalPlayer16.Character
+    local _ = (_605_vararg1.Position - CFrame.new(10641.0918, -1953.92981, 9825.07031, -0.652825892, -9.2805891e-8, -0.757508039, -2.73638356e-8, 1, -9.89323823e-8, 0.757508039, -4.38572947e-8, -0.652825892).Position).Magnitude
+
+    error('Luraph Script:891: line 3: attempt to compare table < number')
+end
+fenv.TeleportToTarget = function(...)
+    local _611_vararg1 = ...
+    local _ = (_611_vararg1.Position - _LocalPlayer16.Character.HumanoidRootPart.Position).Magnitude
+
+    error('Luraph Script:921: line 3: attempt to compare number < table')
+end
+fenv.notween = function(...)
+    local _618_vararg1 = ...
+    local _HumanoidRootPart620 = _LocalPlayer16.Character.HumanoidRootPart
+
+    _HumanoidRootPart620.CFrame = _618_vararg1
+end
+fenv.BTP = function(...)
+    local _621_vararg1 = ...
+    local _LocalPlayer623 = game.Players.LocalPlayer
+    local _HumanoidRootPart625 = _LocalPlayer623.Character.HumanoidRootPart
+    local _Humanoid627 = _LocalPlayer623.Character.Humanoid
+    local _ = _621_vararg1.Position
+
+    _Humanoid627.Health = 0
+    _HumanoidRootPart625.CFrame = _621_vararg1
+
+    local _Quest632 = _LocalPlayer623.PlayerGui.Main.Quest
+
+    _Quest632.Visible = false
+
+    local _ = (_HumanoidRootPart625.Position - _HumanoidRootPart625.Position).Magnitude
+
+    error('Luraph Script:941: line 3: attempt to compare number < table')
+end
+
+spawn(function(...)
+    task.wait()
+
+    local _ = _G.SailBoat_Hydra
+    local _ = _G.WardenBoss
+    local _ = _G.AutoFactory
+    local _ = _G.HighestMirage
+    local _ = _G.HCM
+    local _ = _G.PGB
+    local _ = _G.Leviathan1
+    local _ = _G.UPGDrago
+    local _ = _G.Complete_Trials
+    local _ = _G.TpDrago_Prehis
+    local _ = _G.BuyDrago
+    local _ = _G.AutoFireFlowers
+    local _ = _G.DT_Uzoth
+    local _ = _G.AutoBerry
+    local _ = _G.Prehis_Find
+    local _ = _G.Prehis_Skills
+    local _ = _G.Prehis_DB
+    local _ = _G.Prehis_DE
+    local _ = _G.FarmBlazeEM
+    local _ = _G.Dojoo
+    local _ = _G.CollectPresent
+    local _ = _G.AutoLawKak
+    local _ = _G.TpLab
+    local _ = _G.AutoPhoenixF
+    local _ = _G.AutoFarmChest
+    local _ = _G.AutoHytHallow
+    local _ = _G.LongsWord
+    local _ = _G.BlackSpikey
+    local _ = _G.AutoHolyTorch
+    local _ = _G.TrainDrago
+    local _ = _G.AutoSaber
+    local _ = _G.FarmMastery_Dev
+    local _ = _G.CitizenQuest
+    local _ = _G.AutoEctoplasm
+    local _ = _G.KeysRen
+    local _ = _G.Auto_Rainbow_Haki
+    local _ = _G.obsFarm
+    local _ = _G.AutoBigmom
+    local _ = _G.Doughv2
+    local _ = _G.AuraBoss
+    local _ = _G.Raiding
+    local _ = _G.Auto_Cavender
+    local _ = _G.TpPly
+    local _ = _G.Bartilo_Quest
+    local _ = _G.Level
+    local _ = _G.Dungeon
+    local _ = _G.FarmEliteHunt
+    local _ = _G.AutoZou
+    local _ = _G.AutoFarm_Bone
+    local _ = genv.AutoMaterial
+    local _ = _G.CraftVM
+    local _ = _G.FrozenTP
+    local _ = _G.TPDoor
+    local _ = _G.AcientOne
+    local _ = _G.AutoFarmNear
+    local _ = _G.Prefully
+    local _ = _G.Lighting
+    local _ = _G.LightingC
+    local _ = _G.Anchorsw
+    local _ = _G.AutoRaidCastle
+    local _ = _G.DarkBladev3
+    local _ = _G.AutoFarmRaid
+    local _ = _G.Auto_Cake_Prince
+    local _ = _G.Addealer
+    local _ = _G.TPNpc
+    local _ = _G.TwinHook
+    local _ = _G.FindMirage
+    local _ = _G.FarmChestM
+    local _ = _G.Shark
+    local _ = _G.TerrorShark
+    local _ = _G.Piranha
+    local _ = _G.MobCrew
+    local _ = _G.SeaBeast1
+    local _ = _G.FishBoat
+    local _ = _G.AutoPole
+    local _ = _G.AutoPoleV2
+    local _ = _G.Auto_SuperHuman
+    local _ = _G.AutoDeathStep
+    local _ = _G.Auto_SharkMan_Karate
+    local _ = _G.Auto_Electric_Claw
+    local _ = _G.AutoDragonTalon
+    local _ = _G.Auto_Def_DarkCoat
+    local _ = _G.Auto_God_Human
+    local _ = _G.Auto_Tushita
+    local _ = _G.AutoMatSoul
+    local _ = _G.AutoKenVTWO
+    local _ = _G.AutoSerpentBow
+    local _ = _G.AutoFMon
+    local _ = _G.Auto_Soul_Guitar
+    local _ = _G.TPGEAR
+    local _ = _G.AutoSaw
+    local _ = _G.AutoTridentW2
+    local _ = _G.Auto_StartRaid
+    local _ = _G.AutoEvoRace
+    local _ = _G.AutoGetQuestBounty
+    local _ = _G.MarinesCoat
+    local _ = _G.TravelDres
+    local _ = _G.Defeating
+    local _ = _G.DummyMan
+    local _ = _G.Auto_Yama
+    local _ = _G.Auto_SwanGG
+    local _ = _G.SwanCoat
+    local _ = _G.AutoEcBoss
+    local _ = _G.Auto_Mink
+    local _ = _G.Auto_Human
+    local _ = _G.Auto_Skypiea
+    local _ = _G.Auto_Fish
+    local _ = _G.CDK_TS
+    local _ = _G.CDK_YM
+    local _ = _G.CDK
+    local _ = _G.AutoFarmGodChalice
+    local _ = _G.AutoFistDarkness
+    local _ = _G.AutoMiror
+    local _ = _G.Teleport
+    local _ = _G.AutoKilo
+    local _ = _G.AutoGetUsoap
+    local _ = _G.Praying
+    local _ = _G.TryLucky
+    local _ = _G.AutoColShad
+    local _ = _G.AutoUnHaki
+    local _ = _G.Auto_DonAcces
+    local _ = _G.AutoRipIngay
+    local _ = _G.DragoV3
+    local _ = _G.DragoV1
+    local _ = _G.SailBoats
+    local _ = fenv.NextIs
+    local _ = _G.FarmGodChalice
+    local _ = _G.IceBossRen
+    local _ = fenv.senth
+    local _ = fenv.senth2
+    local _ = _G.Lvthan
+    local _ = _G.beasthunter
+    local _ = _G.DangerLV
+    local _ = _G.Relic123
+    local _ = _G.tweenKitsune
+    local _ = _G.Collect_Ember
+    local _ = _G.AutofindKitIs
+    local _ = _G.snaguine
+    local _ = _G.TwFruits
+    local _ = _G.tweenKitShrine
+    local _ = _G.Tp_LgS
+    local _ = _G.Tp_MasterA
+    local _ = _G.tweenShrine
+    local _ = _G.FarmMastery_G
+    local _ = _G.FarmMastery_S
+
+    fenv.shouldTween = false
+
+    error('Luraph Script:949: internal 557: <25ms: infinitelooperror>')
+end)
+
+fenv.QuestB = function(...) end
+fenv.QuestBeta = function(...) end
+fenv.QuestCheck = function(...) end
+fenv.MaterialMon = function(...) end
+fenv.QuestNeta = function(...) end
+
+local _call653 = loadstring(game:HttpGet('https://pastefy.app/ZUOP3BeB/raw'))().CreateMain({
+    Desc = '',
+})
+local _call655 = _call653.CreatePage({
+    Page_Name = 'Farming',
+    Page_Title = 'Farming',
+})
+local _call657 = _call653.CreatePage({
+    Page_Name = 'Local Player',
+    Page_Title = 'Local Player',
+})
+local _call659 = _call653.CreatePage({
+    Page_Name = 'Stack Farm',
+    Page_Title = 'Stack Farm',
+})
+local _call661 = _call653.CreatePage({
+    Page_Name = 'Farm Other',
+    Page_Title = 'Farm Other',
+})
+local _call663 = _call653.CreatePage({
+    Page_Name = 'Sea Events',
+    Page_Title = 'Sea Events',
+})
+local _call665 = _call653.CreatePage({
+    Page_Name = 'Mirage & Upgrade',
+    Page_Title = 'Mirage & Upgrade',
+})
+local _call667 = _call653.CreatePage({
+    Page_Name = 'Dragon Dojo',
+    Page_Title = 'Dragon Dojo',
+})
+local _call669 = _call653.CreatePage({
+    Page_Name = 'Prehistoric',
+    Page_Title = 'Prehistoric',
+})
+local _call671 = _call653.CreatePage({
+    Page_Name = 'Raid',
+    Page_Title = 'Raid',
+})
+local _call673 = _call653.CreatePage({
+    Page_Name = 'Combat PVP',
+    Page_Title = 'Combat PVP',
+})
+local _call675 = _call653.CreatePage({
+    Page_Name = 'Teleport',
+    Page_Title = 'Teleport',
+})
+local _call677 = _call653.CreatePage({
+    Page_Name = 'Fruits',
+    Page_Title = 'Fruits',
+})
+local _call679 = _call653.CreatePage({
+    Page_Name = 'Shop',
+    Page_Title = 'Shop',
+})
+local _call681 = _call653.CreatePage({
+    Page_Name = 'Misc',
+    Page_Title = 'Misc',
+})
+local _call683 = _call655.CreateSection('Farming')
+local _call685 = _call657.CreateSection('Local Player')
+local _call687 = _call659.CreateSection('Stack Farm')
+local _call689 = _call661.CreateSection('Farm Other')
+
+_call663.CreateSection('Sea Events')
+_call665.CreateSection('Mirage & Upgrade')
+_call667.CreateSection('Dragon Dojo')
+_call669.CreateSection('Prehistoric')
+_call671.CreateSection('Raid')
+_call673.CreateSection('Combat PVP')
+_call675.CreateSection('Teleport')
+_call677.CreateSection('Fruits')
+_call679.CreateSection('Shop')
+_call681.CreateSection('Misc')
+makefolder('TeddyHub')
+
+local _call714 = game.HttpService:JSONDecode(nil)
+local _ = _call714['Auto Farm Level']
+local _ = _call714['Auto Farm Level'].Type
+local _ = _call714['Auto Farm Level'].Type
+
+_G.Level = ''
+
+_call683.CreateToggle({
+    Default = false,
+    Title = 'Auto Farm Level',
+    Desc = '',
+}, function(...) end)
+task.spawn(function(...) end)
+makefolder('TeddyHub')
+writefile('TeddyHub/teddymain.json', '{}')
+
+_G.TravelDres = ''
+
+_call683.CreateToggle({
+    Default = false,
+    Title = 'Auto Travel Dressrosa',
+    Desc = '',
+}, function(...) end)
+spawn(function(...) end)
+makefolder('TeddyHub')
+
+local _ = game.HttpService
+
+writefile('TeddyHub/teddymain.json', '{}')
+
+_G.Zou = ''
+
+_call683.CreateToggle({
+    Default = false,
+    Title = 'Auto Zou Quest',
+    Desc = '',
+}, function(...) end)
+spawn(function(...) end)
+writefile('TeddyHub/teddymain.json', '{}')
+
+_G.AutoFishing = ''
+
+_call683.CreateToggle({
+    Default = false,
+    Title = 'Auto Farm Fishing',
+    Desc = '',
+}, function(...) end)
+
+local _call748 = game:GetService('ReplicatedStorage')
+
+game:GetService('Workspace')
+
+local _call753 = _call748:WaitForChild('FishReplicated')
+
+_call753:WaitForChild('FishingRequest')
+require(_call748.Util.GetWaterHeightAtLocation)
+
+local _ = require(_call753.FishingClient.Config).Rod.MaxLaunchDistance
+
+task.spawn(function(...) end)
+writefile('TeddyHub/teddymain.json', '{}')
+
+_G.AutoFarmNear = ''
+
+_call683.CreateToggle({
+    Default = false,
+    Title = 'Auto Farm Nearest',
+    Desc = '',
+}, function(...) end)
+spawn(function(...) end)
+writefile('TeddyHub/teddymain.json', '{}')
+
+_G.FactoryRaids = ''
+
+_call683.CreateToggle({
+    Default = false,
+    Title = 'Auto Factory Raid',
+    Desc = '',
+}, function(...) end)
+spawn(function(...) end)
+writefile('TeddyHub/teddymain.json', '{}')
+
+_G.AutoRaidCastle = ''
+
+_call683.CreateToggle({
+    Default = false,
+    Title = 'Auto Pirate Raid',
+    Desc = '',
+}, function(...) end)
+spawn(function(...) end)
+writefile('TeddyHub/teddymain.json', '{}')
+
+genv.SelectMaterial = ''
+
+_call683.CreateDropdown({
+    Title = 'Choose Material',
+    List = {},
+    Selected = false,
+    Search = false,
+}, function(...) end)
+writefile('TeddyHub/teddymain.json', '{}')
+
+genv.AutoMaterial = ''
+
+_call683.CreateToggle({
+    Default = false,
+    Title = 'Auto Materials',
+    Desc = '',
+}, function(...) end)
+spawn(function(...) end)
+writefile('TeddyHub/teddymain.json', '{}')
+
+_G.AutoEctoplasm = ''
+
+_call683.CreateToggle({
+    Default = false,
+    Title = 'Auto Farm Ectoplasm',
+    Desc = '',
+}, function(...) end)
+spawn(function(...) end)
+writefile('TeddyHub/teddymain.json', '{}')
+
+_G.Bartilo_Quest = ''
+
+_call683.CreateToggle({
+    Default = false,
+    Title = 'Auto Done Bartilo Quest',
+    Desc = '',
+}, function(...) end)
+spawn(function(...) end)
+writefile('TeddyHub/teddymain.json', '{}')
+
+_G.CitizenQuest = ''
+
+_call683.CreateToggle({
+    Default = false,
+    Title = 'Auto Done Citizen Quest',
+    Desc = '',
+}, function(...) end)
+spawn(function(...) end)
+makefolder('TeddyHub')
+
+local _call817 = game.HttpService:JSONDecode('{}')
+local _ = _call817['Auto Training Dummy']
+local _ = _call817['Auto Training Dummy'].Type
+local _ = _call817['Auto Training Dummy'].Type
+
+_G.DummyMan = ''
+
+_call683.CreateToggle({
+    Default = false,
+    Title = 'Auto Training Dummy',
+    Desc = '',
+}, function(...) end)
+spawn(function(...) end)
+writefile('TeddyHub/teddymain.json', '{}')
+
+_G.AutoBerry = ''
+
+_call683.CreateToggle({
+    Default = false,
+    Title = 'Auto Collect Berry',
+    Desc = '',
+}, function(...) end)
+spawn(function(...) end)
+writefile('TeddyHub/teddymain.json', '{}')
+
+_G.AutoFarmChest = ''
+
+_call683.CreateToggle({
+    Default = false,
+    Title = 'Auto Collect Chest',
+    Desc = '',
+}, function(...) end)
+spawn(function(...) end)
+writefile('TeddyHub/teddymain.json', '{}')
+
+fenv.SelectIsland = ''
+
+_call683.CreateDropdown({
+    Title = 'Choose Island',
+    List = {
+        [1] = 'Cake',
+        [2] = 'Bone',
+    },
+    Selected = false,
+    Default = 'Cake',
+    Search = false,
+}, function(...) end)
+writefile('TeddyHub/teddymain.json', '{}')
+
+_G.FarmMastery_Dev = ''
+
+_call683.CreateToggle({
+    Default = false,
+    Title = 'Auto Mastery Fruits',
+    Desc = '',
+}, function(...) end)
+spawn(function(...) end)
+spawn(function(...) end)
+writefile('TeddyHub/teddymain.json', '{}')
+
+_G.FarmMastery_G = ''
+
+_call683.CreateToggle({
+    Default = false,
+    Title = 'Auto Mastery Gun',
+    Desc = '',
+}, function(...) end)
+spawn(function(...) end)
+writefile('TeddyHub/teddymain.json', '{}')
+
+_G.FarmMastery_S = ''
+
+_call683.CreateToggle({
+    Default = false,
+    Title = 'Auto Mastery All Sword',
+    Desc = '',
+}, function(...) end)
+spawn(function(...) end)
+_call683.CreateLabel({
+    Title = 'Cake Princes :: ',
+})
+_call683.CreateLabel({
+    Title = ' Bones :: ',
+})
+spawn(function(...) end)
+spawn(function(...) end)
+writefile('TeddyHub/teddymain.json', '{}')
+
+_G.Auto_Cake_Prince = ''
+
+_call683.CreateToggle({
+    Default = false,
+    Title = 'Auto Cake Prince',
+    Desc = '',
+}, function(...) end)
+spawn(function(...) end)
+writefile('TeddyHub/teddymain.json', '{}')
+
+_G.AutoFarm_Bone = ''
+
+_call683.CreateToggle({
+    Default = false,
+    Title = 'Auto Bones',
+    Desc = '',
+}, function(...) end)
+spawn(function(...) end)
+writefile('TeddyHub/teddymain.json', '{}')
+
+_G.AcceptQuestC = ''
+
+_call683.CreateToggle({
+    Default = false,
+    Title = 'Accept Quests',
+    Desc = '',
+}, function(...) end)
+writefile('TeddyHub/teddymain.json', '{}')
+
+_G.AutoMiror = ''
+
+_call683.CreateToggle({
+    Default = false,
+    Title = 'Auto Farm Mirror',
+    Desc = '',
+}, function(...) end)
+spawn(function(...) end)
+writefile('TeddyHub/teddymain.json', '{}')
+
+_G.AutoHytHallow = ''
+
+_call683.CreateToggle({
+    Default = false,
+    Title = 'Auto Soul Reaper [Fully]',
+    Desc = '',
+}, function(...) end)
+spawn(function(...) end)
+makefolder('TeddyHub')
+
+local _call904 = game.HttpService:JSONDecode('{}')
+local _ = _call904['Auto Random Bones']
+local _ = _call904['Auto Random Bones'].Type
+local _ = _call904['Auto Random Bones'].Type
+
+_G.Auto_Random_Bone = ''
+
+_call683.CreateToggle({
+    Default = false,
+    Title = 'Auto Random Bones',
+    Desc = '',
+}, function(...) end)
+spawn(function(...) end)
+writefile('TeddyHub/teddymain.json', '{}')
+
+_G.TryLucky = ''
+
+_call683.CreateToggle({
+    Default = false,
+    Title = 'Auto Try Luck Gravestone',
+    Desc = '',
+}, function(...) end)
+spawn(function(...) end)
+writefile('TeddyHub/teddymain.json', '{}')
+
+_G.Praying = ''
+
+_call683.CreateToggle({
+    Default = false,
+    Title = 'Auto Pray Gravestone',
+    Desc = '',
+}, function(...) end)
+spawn(function(...) end)
+writefile('TeddyHub/teddymain.json', '{}')
+
+_G.Doughv2 = ''
+
+_call683.CreateToggle({
+    Default = false,
+    Title = 'Auto Unlock Dough Dungeon',
+    Desc = '',
+}, function(...) end)
+spawn(function(...) end)
+writefile('TeddyHub/teddymain.json', '{}')
+
+_G.AutoPhoenixF = ''
+
+_call683.CreateToggle({
+    Default = false,
+    Title = 'Auto Unlock Phoenix Dungeon',
+    Desc = '',
+}, function(...) end)
+spawn(function(...) end)
+writefile('TeddyHub/teddymain.json', '{}')
+
+_G.Tp_MasterA = ''
+
+_call683.CreateToggle({
+    Default = false,
+    Title = 'Auto Teleport Barista Cousin',
+    Desc = '',
+}, function(...) end)
+spawn(function(...) end)
+_call683.CreateButton({
+    Title = 'Buy Buso Colors',
+}, function(...) end)
+writefile('TeddyHub/teddymain.json', '{}')
+
+_G.Auto_Rainbow_Haki = ''
+
+_call683.CreateToggle({
+    Default = false,
+    Title = 'Auto Rainbow Colors',
+    Desc = '',
+}, function(...) end)
+spawn(function(...) end)
+writefile('TeddyHub/teddymain.json', '{}')
+
+_G.GetQFast = ''
+
+_call683.CreateToggle({
+    Default = false,
+    Title = 'Accept Rainbow Quest Faster',
+    Desc = '',
+}, function(...) end)
+writefile('TeddyHub/teddymain.json', '{}')
+
+_G.obsFarm = ''
+
+_call683.CreateToggle({
+    Default = false,
+    Title = 'Auto Farm Observation',
+    Desc = '',
+}, function(...) end)
+spawn(function(...) end)
+spawn(function(...) end)
+writefile('TeddyHub/teddymain.json', '{}')
+
+_G.AutoKenVTWO = ''
+
+_call683.CreateToggle({
+    Default = false,
+    Title = 'Auto Observation V2',
+    Desc = '',
+}, function(...) end)
+spawn(function(...) end)
+writefile('TeddyHub/teddymain.json', '{}')
+
+_G.Auto_Mink = ''
+
+_call683.CreateToggle({
+    Default = false,
+    Title = 'Auto Upgrade Mink V3',
+    Desc = '',
+}, function(...) end)
+spawn(function(...) end)
+writefile('TeddyHub/teddymain.json', '{}')
+
+_G.Auto_Human = ''
+
+_call683.CreateToggle({
+    Default = false,
+    Title = 'Auto Upgrade Human V3',
+    Desc = '',
+}, function(...) end)
+spawn(function(...) end)
+writefile('TeddyHub/teddymain.json', '{}')
+
+_G.Auto_Skypiea = ''
+
+_call683.CreateToggle({
+    Default = false,
+    Title = 'Auto Upgrade Skypiea V3',
+    Desc = '',
+}, function(...) end)
+spawn(function(...) end)
+makefolder('TeddyHub')
+
+local _call994 = game.HttpService:JSONDecode('{}')
+local _ = _call994['Auto Upgrade FishMan V3']
+local _ = _call994['Auto Upgrade FishMan V3'].Type
+local _ = _call994['Auto Upgrade FishMan V3'].Type
+
+_G.Auto_Fish = ''
+
+_call683.CreateToggle({
+    Default = false,
+    Title = 'Auto Upgrade FishMan V3',
+    Desc = '',
+}, function(...) end)
+spawn(function(...) end)
+writefile('TeddyHub/teddymain.json', '{}')
+
+_G.AutoRipIngay = ''
+
+_call683.CreateToggle({
+    Default = false,
+    Title = 'Auto Valkyrie',
+    Desc = '',
+}, function(...) end)
+spawn(function(...) end)
+writefile('TeddyHub/teddymain.json', '{}')
+
+_G.AutoUnHaki = ''
+
+_call683.CreateToggle({
+    Default = false,
+    Title = 'Auto Unlocked Puzzle',
+    Desc = '',
+}, function(...) end)
+
+fenv.AuraSkin = function(...) end
+fenv.VaildColor = function(...) end
+fenv.HakiCalculate = function(...) end
+
+spawn(function(...) end)
+writefile('TeddyHub/teddymain.json', '{}')
+
+_G.ChooseWP = ''
+
+_call685.CreateDropdown({
+    Title = 'Select Weapon',
+    List = {
+        [1] = 'Melee',
+        [2] = 'Sword',
+        [3] = 'Blox Fruit',
+        [4] = 'Gun',
+    },
+    Selected = false,
+    Default = 'Melee',
+    Search = false,
+}, function(...) end)
+spawn(function(...) end)
+writefile('TeddyHub/teddymain.json', '{}')
+
+_G.Seriality = '[ Not Supported Gas M1 ]'
+
+_call685.CreateToggle({
+    Default = true,
+    Title = 'Initialize Attack [M1/Melee/Sword]',
+    Desc = '[ Not Supported Gas M1 ]',
+}, function(...) end)
+writefile('TeddyHub/teddymain.json', '{}')
+
+fenv._B = ''
+
+_call685.CreateToggle({
+    Default = true,
+    Title = 'Bring Mobs',
+    Desc = '',
+}, function(...) end)
+writefile('TeddyHub/teddymain.json', '{}')
+
+fenv.Boud = ''
+
+_call685.CreateToggle({
+    Default = true,
+    Title = 'Auto Turn on Buso',
+    Desc = '',
+}, function(...) end)
+spawn(function(...) end)
+writefile('TeddyHub/teddymain.json', '{}')
+
+_G.RaceClickAutov3 = ''
+
+_call685.CreateToggle({
+    Default = false,
+    Title = 'Auto Turn on Race V3',
+    Desc = '',
+}, function(...) end)
+writefile('TeddyHub/teddymain.json', '{}')
+
+_G.RaceClickAutov4 = ''
+
+_call685.CreateToggle({
+    Default = false,
+    Title = 'Auto Turn on Race V4',
+    Desc = '',
+}, function(...) end)
+spawn(function(...) end)
+spawn(function(...) end)
+writefile('TeddyHub/teddymain.json', '{}')
+
+fenv.RandomCFrame = ''
+
+_call685.CreateToggle({
+    Default = false,
+    Title = 'Auto Turn on Spin Position',
+    Desc = '',
+}, function(...) end)
+writefile('TeddyHub/teddymain.json', '{}')
+
+_G.Bypass = ''
+
+_call685.CreateToggle({
+    Default = false,
+    Title = 'Turn on Bypass Teleport',
+    Desc = '',
+}, function(...) end)
+writefile('TeddyHub/teddymain.json', '{}')
+
+_G.Safemode = 'turn on for safe ur health if low'
+
+_call685.CreateToggle({
+    Default = false,
+    Title = 'Panic Mode',
+    Desc = 'turn on for safe ur health if low',
+}, function(...) end)
+spawn(function(...) end)
+writefile('TeddyHub/teddymain.json', '{}')
+
+_G.AntiAFK = ''
+
+_call685.CreateToggle({
+    Default = true,
+    Title = 'Anti AFK',
+    Desc = '',
+}, function(...) end)
+game:GetService('Players').LocalPlayer.Idled:connect(function(...) end)
+writefile('TeddyHub/teddymain.json', '{}')
+
+_G.DistroyHit = ''
+
+_call685.CreateToggle({
+    Default = false,
+    Title = 'Remove Hit VFX',
+    Desc = '',
+}, function(...) end)
+spawn(function(...) end)
+makefolder('TeddyHub')
+
+local _call1084 = game.HttpService:JSONDecode('{}')
+local _ = _call1084['Remove Death & Respawned VFX']
+local _ = _call1084['Remove Death & Respawned VFX'].Type
+local _ = _call1084['Remove Death & Respawned VFX'].Type
+
+fenv.RDeath = ''
+
+_call685.CreateToggle({
+    Default = false,
+    Title = 'Remove Death & Respawned VFX',
+    Desc = '',
+}, function(...) end)
+spawn(function(...) end)
+writefile('TeddyHub/teddymain.json', '{}')
+
+fenv.RemoveDamage = ''
+
+_call685.CreateToggle({
+    Default = false,
+    Title = 'Disable Notify',
+    Desc = '',
+}, function(...) end)
+spawn(function(...) end)
+_call685.CreateSlider({
+    Min = 0,
+    Title = 'Stats Value',
+    Max = 1000,
+    Precise = true,
+    Default = 10,
+}, function(...) end)
+writefile('TeddyHub/teddymain.json', '{}')
+
+_G.Auto_Melee = ''
+
+_call685.CreateToggle({
+    Default = false,
+    Title = 'Auto Melee',
+    Desc = '',
+}, function(...) end)
+writefile('TeddyHub/teddymain.json', '{}')
+
+_G.Auto_Sword = ''
+
+_call685.CreateToggle({
+    Default = false,
+    Title = 'Auto Swords',
+    Desc = '',
+}, function(...) end)
+writefile('TeddyHub/teddymain.json', '{}')
+
+_G.Auto_Gun = ''
+
+_call685.CreateToggle({
+    Default = false,
+    Title = 'Auto Gun',
+    Desc = '',
+}, function(...) end)
+writefile('TeddyHub/teddymain.json', '{}')
+
+_G.Auto_Blox = ''
+
+_call685.CreateToggle({
+    Default = false,
+    Title = 'Auto Blox Fruit',
+    Desc = '',
+}, function(...) end)
+writefile('TeddyHub/teddymain.json', '{}')
+
+_G.Auto_Defense = ''
+
+_call685.CreateToggle({
+    Default = false,
+    Title = 'Auto Defense',
+    Desc = '',
+}, function(...) end)
+spawn(function(...) end)
+spawn(function(...) end)
+spawn(function(...) end)
+spawn(function(...) end)
+spawn(function(...) end)
+writefile('TeddyHub/teddymain.json', '{}')
+
+_G.Auto_SuperHuman = ''
+
+_call687.CreateToggle({
+    Default = false,
+    Title = 'Auto Superhuman',
+    Desc = '',
+}, function(...) end)
+spawn(function(...) end)
+writefile('TeddyHub/teddymain.json', '{}')
+
+_G.AutoDeathStep = ''
+
+_call687.CreateToggle({
+    Default = false,
+    Title = 'Auto DeathStep',
+    Desc = '',
+}, function(...) end)
+spawn(function(...) end)
+writefile('TeddyHub/teddymain.json', '{}')
+
+_G.Auto_SharkMan_Karate = ''
+
+_call687.CreateToggle({
+    Default = false,
+    Title = 'Auto Sharkman Karate',
+    Desc = '',
+}, function(...) end)
+spawn(function(...) end)
+writefile('TeddyHub/teddymain.json', '{}')
+
+_G.Auto_Electric_Claw = ''
+
+_call687.CreateToggle({
+    Default = false,
+    Title = 'Auto ElectricClaw',
+    Desc = '',
+}, function(...) end)
+spawn(function(...) end)
+writefile('TeddyHub/teddymain.json', '{}')
+
+_G.AutoDragonTalon = ''
+
+_call687.CreateToggle({
+    Default = false,
+    Title = 'Auto DragonTalon',
+    Desc = '',
+}, function(...) end)
+spawn(function(...) end)
+writefile('TeddyHub/teddymain.json', '{}')
+
+_G.Auto_God_Human = ''
+
+_call687.CreateToggle({
+    Default = false,
+    Title = 'Auto Godhuman',
+    Desc = '',
+}, function(...) end)
+spawn(function(...) end)
+makefolder('TeddyHub')
+
+local _call1174 = game.HttpService:JSONDecode('{}')
+local _ = _call1174['Auto SanguineArt']
+local _ = _call1174['Auto SanguineArt'].Type
+local _ = _call1174['Auto SanguineArt'].Type
+
+_G.snaguine = ''
+
+_call687.CreateToggle({
+    Default = false,
+    Title = 'Auto SanguineArt',
+    Desc = '',
+}, function(...) end)
+spawn(function(...) end)
+_call689.CreateLabel({
+    Title = 'Elites Process : ',
+})
+spawn(function(...) end)
+writefile('TeddyHub/teddymain.json', '{}')
+
+_G.FarmEliteHunt = ''
+
+_call689.CreateToggle({
+    Default = false,
+    Title = 'Auto Elite Quest',
+    Desc = '',
+}, function(...) end)
+spawn(function(...) end)
+writefile('TeddyHub/teddymain.json', '{}')
+
+_G.StopWhenChalice = ''
+
+_call689.CreateToggle({
+    Default = true,
+    Title = "Stop when got God's Chalice",
+    Desc = '',
+}, function(...) end)
+spawn(function(...) end)
+writefile('TeddyHub/teddymain.json', '{}')
+
+_G.Auto_Tushita = ''
+
+_call689.CreateToggle({
+    Default = false,
+    Title = 'Auto Tushita Sword',
+    Desc = '',
+}, function(...) end)
+spawn(function(...) end)
+writefile('TeddyHub/teddymain.json', '{}')
+
+_G.Auto_Yama = ''
+
+_call689.CreateToggle({
+    Default = false,
+    Title = 'Auto Yama Sword',
+    Desc = '',
+}, function(...) end)
+spawn(function(...) end)
+_call689.CreateLabel({
+    Title = ' Number Cursed dual katana quests : Quest Numbers :',
+})
+spawn(function(...) end)
+writefile('TeddyHub/teddymain.json', '{}')
+
+_G.CDK = ''
+
+_call689.CreateToggle({
+    Default = false,
+    Title = 'Auto Get CDK [ Last Quest ]',
+    Desc = '',
+}, function(...) end)
+spawn(function(...) end)
+writefile('TeddyHub/teddymain.json', '{}')
+
+_G.CDK_YM = ''
+
+_call689.CreateToggle({
+    Default = false,
+    Title = 'Auto Yama CDK',
+    Desc = '',
+}, function(...) end)
+spawn(function(...) end)
+spawn(function(...) end)
+writefile('TeddyHub/teddymain.json', '{}')
+
+_G.CDK_TS = ''
+
+_call689.CreateToggle({
+    Default = false,
+    Title = 'Auto Tushita CDK',
+    Desc = '',
+}, function(...) end)
+spawn(function(...) end)
+_call689.CreateButton({
+    Title = 'Buy Legendary Sword',
+}, function(...) end)
+_call689.CreateButton({
+    Title = 'Buy True Triple Katana Sword',
+}, function(...) end)
+writefile('TeddyHub/teddymain.json', '{}')
+
+_G.Tp_LgS = ''
+
+_call689.CreateToggle({
+    Default = false,
+    Title = 'Tween to Legendary Sword Dealer',
+    Desc = '',
+}, function(...) end)
+spawn(function(...) end)
+writefile('TeddyHub/teddymain.json', '{}')
+
+_G.AutoPole = ''
+
+_call689.CreateToggle({
+    Default = false,
+    Title = 'Auto Pole V1',
+    Desc = '',
+}, function(...) end)
+spawn(function(...) end)
+writefile('TeddyHub/teddymain.json', '{}')
+
+_G.AutoPoleV2 = ''
+
+_call689.CreateToggle({
+    Default = false,
+    Title = 'Auto Pole V2 [Beta]',
+    Desc = '',
+}, function(...) end)
+spawn(function(...) end)
+makefolder('TeddyHub')
+
+local _call1265 = game.HttpService:JSONDecode('{}')
+local _ = _call1265['Auto Law Sword']
+local _ = _call1265['Auto Law Sword'].Type
+local _ = _call1265['Auto Law Sword'].Type
+
+_G.AutoLawKak = ''
+
+_call689.CreateToggle({
+    Default = false,
+    Title = 'Auto Law Sword',
+    Desc = '',
+}, function(...) end)
+spawn(function(...) end)
+_call689.CreateButton({
+    Title = 'Buy Microchip Law',
+}, function(...) end)
+_call689.CreateButton({
+    Title = 'Start Law Raids',
+}, function(...) end)
+writefile('TeddyHub/teddymain.json', '{}')
+
+_G.AutoSaw = ''
+
+_call689.CreateToggle({
+    Default = false,
+    Title = 'Auto Saw Sword',
+    Desc = '',
+}, function(...) end)
+spawn(function(...) end)
+writefile('TeddyHub/teddymain.json', '{}')
+
+_G.AutoSaber = ''
+
+_call689.CreateToggle({
+    Default = false,
+    Title = 'Auto Saber Sword',
+    Desc = '',
+}, function(...) end)
+spawn(function(...) end)
+writefile('TeddyHub/teddymain.json', '{}')
+
+_G.AutoColShad = ''
+
+_call689.CreateToggle({
+    Default = false,
+    Title = 'Auto Cybrog',
+    Desc = '',
+}, function(...) end)
+spawn(function(...) end)
+writefile('TeddyHub/teddymain.json', '{}')
+
+_G.AutoGetUsoap = ''
+
+_call689.CreateToggle({
+    Default = false,
+    Title = "Auto Usoap's Hat",
+    Desc = '',
+}, function(...) end)
+spawn(function(...) end)
+writefile('TeddyHub/teddymain.json', '{}')
+
+_G.Greybeard = ''
+
+_call689.CreateToggle({
+    Default = false,
+    Title = 'Auto Bisento V2',
+    Desc = '',
+}, function(...) end)
+spawn(function(...) end)
+writefile('TeddyHub/teddymain.json', '{}')
+
+_G.WardenBoss = ''
+
+error('Luraph Script:6193: Luraph Script:2189: internal 557: <25ms: infinitelooperror>')
