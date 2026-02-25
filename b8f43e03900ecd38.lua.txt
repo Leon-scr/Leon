@@ -1,0 +1,318 @@
+-- ts file was generated at discord.gg/25ms
+
+local fenv = getfenv()
+
+game:GetService('CoreGui'):FindFirstChild('ToraScript')
+game:GetService('CoreGui').ToraScript:Destroy()
+
+local _14 = loadstring(game:HttpGet('https://raw.githubusercontent.com/liebertsx/Tora-Library/main/src/librarynew', true))()
+local _call16 = _14:CreateWindow('Garden Horizons')
+
+task.spawn(function(_19, _19_2, _19_3, _19_4, _19_5)
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    task.wait()
+    error('internal 557: <25ms: infinitelooperror>')
+end)
+_call16:AddToggle({
+    flag = 'toggle',
+    text = 'Auto Harvest',
+    callback = function(_22)
+        _G.Harvest = _22
+
+        print('Harvest: ', _22)
+
+        local _ = fenv.Harvest
+
+        error('line 1: attempt to call a nil value')
+    end,
+    state = false,
+})
+
+fenv.Harvest = function()
+    spawn(function()
+        wait()
+
+        local _LocalPlayer30 = game:GetService('Players').LocalPlayer
+        local _ = workspace.ClientPlants:FindFirstChildOfClass('Model'):GetAttribute('OwnerUserId') == _LocalPlayer30.UserId
+        local _Hud_UI39 = _LocalPlayer30.PlayerGui.Hud_UI
+
+        for _44, _44_2 in pairs(getconnections(_Hud_UI39.TopButtons.YourGarden.MouseButton1Click))do
+            _44_2:Fire()
+        end
+
+        error('internal 557: <25ms: infinitelooperror>')
+    end)
+end
+
+_call16:AddToggle({
+    flag = 'toggle',
+    text = 'Sell All',
+    callback = function(_50, _50_2) end,
+    state = false,
+})
+
+fenv.Sell = function() end
+
+_call16:AddToggle({
+    flag = 'toggle',
+    text = 'Auto Plant (Random)',
+    callback = function(_54, _54_2) end,
+    state = false,
+})
+
+fenv.Plant = function(_55) end
+
+_call16:AddButton({
+    flag = 'button',
+    text = 'SeedShop UI',
+    callback = function(_58, _58_2, _58_3, _58_4, _58_5) end,
+})
+_call16:AddButton({
+    flag = 'button',
+    text = 'GearShop UI',
+    callback = function(_61, _61_2, _61_3, _61_4) end,
+})
+_call16:AddLabel({
+    text = 'YouTube: Tora IsMe',
+})
+
+local _call65 = _14:CreateWindow('Buy Seeds')
+
+game:GetService('ReplicatedStorage')
+
+for _77, _77_2 in pairs(game:GetService('Players').LocalPlayer.PlayerGui.SeedShop.Frame.ScrollingFrame:GetChildren())do
+    local _call79 = _77_2:GetAttribute('ShopItemName')
+
+    _call65:AddToggle({
+        flag = 'Buy_' .. _call79,
+        text = 'Buy ' .. _call79,
+        callback = function(_84) end,
+        state = false,
+    })
+end
+
+local _call86 = _14:CreateWindow('Buy Items')
+
+game:GetService('ReplicatedStorage')
+
+for _98, _98_2 in pairs(game:GetService('Players').LocalPlayer.PlayerGui.GearShop.Frame.ScrollingFrame:GetChildren())do
+    local _call100 = _98_2:GetAttribute('ShopItemName')
+
+    _call86:AddToggle({
+        flag = 'Buy_' .. _call100,
+        text = 'Buy ' .. _call100,
+        callback = function(_105, _105_2, _105_3, _105_4) end,
+        state = false,
+    })
+end
+
+_14:Init()
