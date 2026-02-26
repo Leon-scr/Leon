@@ -1,0 +1,720 @@
+-- ts file was generated at discord.gg/25ms
+
+local fenv = getfenv()
+local _5 = loadstring(game:HttpGet('https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua'))()
+local _9 = loadstring(game:HttpGet('https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/SaveManager.lua'))()
+local _13 = loadstring(game:HttpGet('https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/InterfaceManager.lua'))()
+local _call15 = game:GetService('Players')
+
+game:GetService('TweenService')
+game:GetService('RunService')
+
+local _call21 = game:GetService('ReplicatedStorage')
+local _call23 = game:GetService('PhysicsService')
+local _LocalPlayer24 = _call15.LocalPlayer
+local _Character25 = _LocalPlayer24.Character
+
+_Character25:WaitForChild('HumanoidRootPart')
+_Character25:WaitForChild('Humanoid')
+_LocalPlayer24.CharacterAdded:Connect(function(_33, _33_2, _33_3, _33_4, _33_5, _33_6)
+    _33:WaitForChild('HumanoidRootPart')
+    _33:WaitForChild('Humanoid')
+
+    local _Died40 = _33:WaitForChild('Humanoid').Died
+    local _ = fenv.onDeath
+
+    _Died40:Connect(nil)
+
+    local _ = fenv.AUTO_FARM
+    local _ = fenv.CURRENT_DELTA_TWEEN
+end)
+_call23:RegisterCollisionGroup('GhostPlayer')
+
+for _50, _50_2 in pairs(_call23:GetRegisteredCollisionGroups())do
+    local _ = _50_2.name
+
+    _call23:CollisionGroupSetCollidable('GhostPlayer', _50_2.name, false)
+end
+
+task.spawn(function(_57, _57_2, _57_3, _57_4, _57_5)
+    for _62, _62_2 in ipairs(workspace:WaitForChild('Bases'):GetChildren())do
+        local _call70 = _62_2:FindFirstChild('Title'):FindFirstChild('TitleGui'):FindFirstChild('Frame'):FindFirstChild('PlayerName')
+        local _ = _call70.Text == _LocalPlayer24.DisplayName
+        local _ = _call70.Text == _LocalPlayer24.Name
+    end
+
+    warn('\u{23f3} Waiting for BASE...')
+    task.wait(1)
+
+    for _82, _82_2 in ipairs(workspace:WaitForChild('Bases'):GetChildren())do
+        local _call90 = _82_2:FindFirstChild('Title'):FindFirstChild('TitleGui'):FindFirstChild('Frame'):FindFirstChild('PlayerName')
+        local _ = _call90.Text == _LocalPlayer24.DisplayName
+        local _ = _call90.Text == _LocalPlayer24.Name
+    end
+
+    warn('\u{23f3} Waiting for BASE...')
+    task.wait(1)
+
+    for _102, _102_2 in ipairs(workspace:WaitForChild('Bases'):GetChildren())do
+        local _call110 = _102_2:FindFirstChild('Title'):FindFirstChild('TitleGui'):FindFirstChild('Frame'):FindFirstChild('PlayerName')
+        local _ = _call110.Text == _LocalPlayer24.DisplayName
+        local _ = _call110.Text == _LocalPlayer24.Name
+    end
+
+    warn('\u{23f3} Waiting for BASE...')
+    task.wait(1)
+
+    for _122, _122_2 in ipairs(workspace:WaitForChild('Bases'):GetChildren())do
+        local _call130 = _122_2:FindFirstChild('Title'):FindFirstChild('TitleGui'):FindFirstChild('Frame'):FindFirstChild('PlayerName')
+        local _ = _call130.Text == _LocalPlayer24.DisplayName
+        local _ = _call130.Text == _LocalPlayer24.Name
+    end
+
+    warn('\u{23f3} Waiting for BASE...')
+    task.wait(1)
+
+    for _142, _142_2 in ipairs(workspace:WaitForChild('Bases'):GetChildren())do
+        local _call150 = _142_2:FindFirstChild('Title'):FindFirstChild('TitleGui'):FindFirstChild('Frame'):FindFirstChild('PlayerName')
+        local _ = _call150.Text == _LocalPlayer24.DisplayName
+        local _ = _call150.Text == _LocalPlayer24.Name
+    end
+
+    warn('\u{23f3} Waiting for BASE...')
+    task.wait(1)
+
+    for _162, _162_2 in ipairs(workspace:WaitForChild('Bases'):GetChildren())do
+        local _call170 = _162_2:FindFirstChild('Title'):FindFirstChild('TitleGui'):FindFirstChild('Frame'):FindFirstChild('PlayerName')
+        local _ = _call170.Text == _LocalPlayer24.DisplayName
+        local _ = _call170.Text == _LocalPlayer24.Name
+    end
+
+    warn('\u{23f3} Waiting for BASE...')
+    task.wait(1)
+
+    for _182, _182_2 in ipairs(workspace:WaitForChild('Bases'):GetChildren())do
+        local _call190 = _182_2:FindFirstChild('Title'):FindFirstChild('TitleGui'):FindFirstChild('Frame'):FindFirstChild('PlayerName')
+        local _ = _call190.Text == _LocalPlayer24.DisplayName
+        local _ = _call190.Text == _LocalPlayer24.Name
+    end
+
+    warn('\u{23f3} Waiting for BASE...')
+    task.wait(1)
+
+    for _202, _202_2 in ipairs(workspace:WaitForChild('Bases'):GetChildren())do
+        local _call210 = _202_2:FindFirstChild('Title'):FindFirstChild('TitleGui'):FindFirstChild('Frame'):FindFirstChild('PlayerName')
+        local _ = _call210.Text == _LocalPlayer24.DisplayName
+        local _ = _call210.Text == _LocalPlayer24.Name
+    end
+
+    warn('\u{23f3} Waiting for BASE...')
+    task.wait(1)
+
+    for _222, _222_2 in ipairs(workspace:WaitForChild('Bases'):GetChildren())do
+        local _call230 = _222_2:FindFirstChild('Title'):FindFirstChild('TitleGui'):FindFirstChild('Frame'):FindFirstChild('PlayerName')
+        local _ = _call230.Text == _LocalPlayer24.DisplayName
+        local _ = _call230.Text == _LocalPlayer24.Name
+    end
+
+    warn('\u{23f3} Waiting for BASE...')
+    task.wait(1)
+
+    for _242, _242_2 in ipairs(workspace:WaitForChild('Bases'):GetChildren())do
+        local _call250 = _242_2:FindFirstChild('Title'):FindFirstChild('TitleGui'):FindFirstChild('Frame'):FindFirstChild('PlayerName')
+        local _ = _call250.Text == _LocalPlayer24.DisplayName
+        local _ = _call250.Text == _LocalPlayer24.Name
+    end
+
+    warn('\u{23f3} Waiting for BASE...')
+    task.wait(1)
+
+    for _262, _262_2 in ipairs(workspace:WaitForChild('Bases'):GetChildren())do
+        local _call270 = _262_2:FindFirstChild('Title'):FindFirstChild('TitleGui'):FindFirstChild('Frame'):FindFirstChild('PlayerName')
+        local _ = _call270.Text == _LocalPlayer24.DisplayName
+        local _ = _call270.Text == _LocalPlayer24.Name
+    end
+
+    warn('\u{23f3} Waiting for BASE...')
+    task.wait(1)
+
+    for _282, _282_2 in ipairs(workspace:WaitForChild('Bases'):GetChildren())do
+        _282_2:FindFirstChild('Title'):FindFirstChild('TitleGui'):FindFirstChild('Frame'):FindFirstChild('PlayerName')
+        error('internal 557: <25ms: infinitelooperror>')
+    end
+end)
+task.spawn(function(_294)
+    task.wait(1)
+    task.wait(1)
+    task.wait(1)
+    task.wait(1)
+    task.wait(1)
+    task.wait(1)
+    task.wait(1)
+    task.wait(1)
+    task.wait(1)
+    task.wait(1)
+    task.wait(1)
+    task.wait(1)
+    task.wait(1)
+    task.wait(1)
+    task.wait(1)
+    task.wait(1)
+    task.wait(1)
+    task.wait(1)
+    task.wait(1)
+    task.wait(1)
+    task.wait(1)
+    task.wait(1)
+    task.wait(1)
+    task.wait(1)
+    task.wait(1)
+    error('internal 557: <25ms: infinitelooperror>')
+end)
+Vector3.new(147.00874328613, -7, -19.401155471802)
+CFrame.new(Vector3.new(147.00874328613, 3.2539694309235, -19.401155471802))
+CFrame.new(125.068192, 4.25395036, -138)
+
+fenv.AUTO_FARM_RUNNING = false
+fenv.startAutoFarm = function(_303, _303_2, _303_3, _303_4)
+    task.spawn(function(_306, _306_2, _306_3)
+        fenv.AUTO_FARM_RUNNING = true
+
+        for _309, _309_2 in ipairs(_33:GetDescendants())do
+            _309_2:IsA('BasePart')
+
+            _309_2.CollisionGroup = 'Default'
+        end
+
+        fenv.AUTO_FARM_RUNNING = false
+    end)
+end
+
+task.spawn(function(_314, _314_2, _314_3, _314_4, _314_5)
+    task.wait(0.2)
+    error('internal 557: <25ms: infinitelooperror>')
+end)
+task.spawn(function()
+    task.wait(0.08)
+    error('internal 557: <25ms: infinitelooperror>')
+end)
+_call21:WaitForChild('Shared'):WaitForChild('Remotes'):WaitForChild('Networking'):WaitForChild('RF/PlotAction')
+task.spawn(function(_328, _328_2, _328_3)
+    task.wait(0.25)
+
+    local _ = fenv.AUTO_MONEY
+
+    error('internal 557: <25ms: infinitelooperror>')
+end)
+task.spawn(function(_332, _332_2, _332_3, _332_4, _332_5)
+    task.wait(0.5)
+    error('internal 557: <25ms: infinitelooperror>')
+end)
+task.spawn(function(_335, _335_2, _335_3, _335_4, _335_5)
+    error('internal 557: <25ms: infinitelooperror>')
+end)
+task.spawn(function(_338)
+    task.wait(0.8)
+    error('internal 557: <25ms: infinitelooperror>')
+end)
+task.spawn(function(_341)
+    error('internal 557: <25ms: infinitelooperror>')
+end)
+task.spawn(function(_344)
+    task.wait(0.6)
+    error('internal 557: <25ms: infinitelooperror>')
+end)
+task.spawn(function(_347, _347_2, _347_3, _347_4, _347_5)
+    error('internal 557: <25ms: infinitelooperror>')
+end)
+task.spawn(function()
+    error('internal 557: <25ms: infinitelooperror>')
+end)
+task.spawn(function(_353, _353_2, _353_3, _353_4)
+    task.wait(0.12)
+    error('internal 557: <25ms: infinitelooperror>')
+end)
+task.spawn(function(_356)
+    error('internal 557: <25ms: infinitelooperror>')
+end)
+Vector3.new(147.00874328613, -5, -19.401155471802)
+game:GetService('TweenService')
+task.spawn(function(_363, _363_2, _363_3, _363_4, _363_5)
+    error('internal 557: <25ms: infinitelooperror>')
+end)
+
+local _call365 = game:GetService('RunService')
+
+_call365.Heartbeat:Connect(function(_369, _369_2, _369_3, _369_4) end)
+task.spawn(function(_372, _372_2)
+    error('internal 557: <25ms: infinitelooperror>')
+end)
+task.spawn(function(_375, _375_2, _375_3, _375_4, _375_5)
+    task.wait(0.08)
+    error('internal 557: <25ms: infinitelooperror>')
+end)
+task.spawn(function(_378, _378_2, _378_3, _378_4, _378_5)
+    task.wait(1)
+    error('internal 557: <25ms: infinitelooperror>')
+end)
+Vector3.new(95.5, -20.58, 0)
+Vector3.new(1000, 6, 336)
+Vector3.new(4, 100, 70)
+
+local _ = CFrame.new(0, 16, -139.999985) * CFrame.fromMatrix(Vector3.zero, Vector3.new(0, 0, 1), Vector3.new(-1, 0, 0), Vector3.new(0, -1, 0))
+local _ = CFrame.new(0, 16, 160) * CFrame.fromMatrix(Vector3.zero, Vector3.new(0, 0, 1), Vector3.new(-1, 0, 0), Vector3.new(0, -1, 0))
+
+Vector3.new(90.049987792969, 6, 20)
+CFrame.new(-3, -3.1, -139.38501)
+CFrame.Angles(1.5707963267948966, 1.5707963267948966, 0)
+
+local _call418 = Instance.new('ScreenGui')
+
+_call418.Name = 'EventTimerHUD'
+_call418.ResetOnSpawn = false
+_call418.Enabled = false
+_call418.Parent = _LocalPlayer24:WaitForChild('PlayerGui')
+
+local _call421 = Instance.new('Frame')
+
+_call421.Parent = _call418
+_call421.Size = UDim2.fromScale(0.2, 0.07)
+_call421.Position = UDim2.fromScale(0.78, 0.75)
+_call421.BackgroundTransparency = 1
+
+task.spawn(function(_428)
+    task.wait(0.2)
+    error('internal 557: <25ms: infinitelooperror>')
+end)
+Vector3.new(1, 1, 1)
+
+fenv.ToggleWeaponScale = function(_431, _431_2, _431_3, _431_4, _431_5) end
+fenv.SetWeaponScale = function(_432, _432_2, _432_3, _432_4) end
+fenv.SetLinkedScale = function(_433, _433_2) end
+fenv.ResetWeaponScale = function(_434, _434_2) end
+fenv.ToggleWeaponInvisible = function(_435) end
+
+_call365.RenderStepped:Connect(function(_439) end)
+_LocalPlayer24.CharacterAdded:Connect(function(_443) end)
+
+local _ = workspace.CurrentCamera
+local _ = _LocalPlayer24.CameraMinZoomDistance
+local _ = _LocalPlayer24.CameraMaxZoomDistance
+local _ = _LocalPlayer24.DevCameraOcclusionMode
+
+_call23:CreateCollisionGroup('HitboxGhost')
+_call23:CollisionGroupSetCollidable('HitboxGhost', 'Default', false)
+
+for _453, _453_2 in ipairs(_call15:GetPlayers())do
+    local _ = _453_2 == _LocalPlayer24
+    local _ = _453_2.Character
+
+    _453_2.Character:WaitForChild('HumanoidRootPart', 5):FindFirstChild('ScaledTag')
+    _453_2.CharacterAdded:Connect(function(_464, _464_2, _464_3) end)
+end
+
+_call15.PlayerAdded:Connect(function(_468, _468_2) end)
+game:GetService('VirtualUser')
+_call15.LocalPlayer.Idled:Connect(function(_475, _475_2) end)
+
+local _call481 = _5:CreateWindow({
+    SubTitle = 'Escape tsunami for brainrots v1',
+    Title = 'Leon Hub|',
+    MinimizeKey = Enum.KeyCode.LeftAlt,
+    Theme = 'Dark',
+    Acrylic = true,
+    TabWidth = 160,
+    Size = UDim2.fromOffset(520, 380),
+})
+local _call483 = _call481:AddTab({
+    Title = 'Main',
+    Icon = 'home',
+})
+local _call485 = _call481:AddTab({
+    Title = 'Farm setting',
+    Icon = 'cog',
+})
+local _call487 = _call481:AddTab({
+    Title = 'farm Auto',
+    Icon = 'box',
+})
+local _call489 = _call481:AddTab({
+    Title = 'Event',
+    Icon = 'timer',
+})
+local _call491 = _call481:AddTab({
+    Title = 'Misc',
+    Icon = 'user',
+})
+
+_call483:AddParagraph({
+    Title = '\u{1f34c}Notification',
+    Content = 'fl kênh tiktok để nhận được những script mới nhất!!',
+})
+_call483:AddParagraph({
+    Title = 'Update 1',
+    Content = '\u{2b50}Fix farm \u{2b50}Fix Auto Trial\u{2b50}Custom Speed 1500 max lol 26/02/2026',
+})
+_call483:AddSection('Mian')
+_call483:AddToggle('AntiAFKToggle', {
+    Callback = function(_500, _500_2, _500_3, _500_4, _500_5, _500_6) end,
+    Title = 'Anti AFK',
+    Default = false,
+})
+_call483:AddToggle('instant_prompt', {
+    Callback = function(_503, _503_2, _503_3) end,
+    Title = 'Instant Pick',
+    Default = false,
+})
+_call483:AddToggle('unlockcam', {
+    Callback = function(_506, _506_2, _506_3) end,
+    Title = 'Unlock Zoom',
+    Default = false,
+})
+_call483:AddToggle('event_timer', {
+    Callback = function(_509, _509_2, _509_3) end,
+    Title = 'Show Event Timer',
+    Default = false,
+})
+_call483:AddToggle('vip_wall_remove', {
+    Callback = function(_512) end,
+    Default = false,
+    Title = 'VIP Walls',
+    Description = '\u{2b50}New update',
+})
+_call485:AddSection('Custom Speed')
+_call485:AddParagraph({
+    Title = 'Read me',
+    Content = 'Recommended speed: 500 or 800 Using a higher speed than this may cause your character to die',
+})
+
+fenv.Display = false
+
+_call485:AddParagraph({
+    Title = 'Current Speed',
+    Content = '500',
+})
+_call485:AddSlider('custom_speed_slider', {
+    Min = 300,
+    Title = 'Speed Value',
+    Max = 1500,
+    Default = 500,
+    Callback = function(_521, _521_2) end,
+    Rounding = 50,
+})
+_call485:AddToggle('custom_speed_toggle', {
+    Callback = function(_524, _524_2) end,
+    Title = 'Enable Custom Speed',
+    Default = true,
+})
+_call485:AddSection('FARM BRAINROT LUCKY BLOCK')
+_call485:AddDropdown('brainrot_rarity', {
+    Title = 'Brainrot Rarity',
+    Values = {
+        [1] = 'Common',
+        [2] = 'Uncommon',
+        [3] = 'Rare',
+        [4] = 'Epic',
+        [5] = 'Legendary',
+        [6] = 'Mythical',
+        [7] = 'Cosmic',
+        [8] = 'Secret',
+        [9] = 'Celestial',
+        [10] = 'Divine',
+        [11] = 'Infinity',
+    },
+    Multi = true,
+    Callback = function(_529, _529_2, _529_3, _529_4, _529_5) end,
+    Default = {},
+})
+_call485:AddDropdown('lucky_rarity', {
+    Title = 'Lucky Block Rarity',
+    Values = {
+        [1] = 'Common',
+        [2] = 'Uncommon',
+        [3] = 'Rare',
+        [4] = 'Epic',
+        [5] = 'Legendary',
+        [6] = 'Mythical',
+        [7] = 'Cosmic',
+        [8] = 'Secret',
+        [9] = 'Celestial',
+        [10] = 'Divine',
+        [11] = 'Doom',
+        [12] = 'Volcanic',
+        [13] = 'Admin',
+        [14] = 'Infinity',
+        [15] = 'UFO',
+        [16] = 'Gamer',
+        [17] = 'Candy',
+        [18] = 'Arcade',
+        [19] = 'Sugar Rush',
+    },
+    Multi = true,
+    Callback = function(_532) end,
+    Default = {},
+})
+_call485:AddDropdown('mutation_filter_dd', {
+    Title = 'Lucky Block Mutations',
+    Default = {},
+    Values = {
+        [1] = 'Blood',
+        [2] = 'Doom',
+        [3] = 'Electric',
+        [4] = 'Candy',
+        [5] = 'Gamer',
+        [6] = 'Money',
+        [7] = 'UFO',
+        [8] = 'Admin',
+        [9] = 'Hacker',
+        [10] = 'Lucky',
+        [11] = 'Radioactive',
+    },
+    Multi = true,
+    Callback = function(_535, _535_2, _535_3, _535_4, _535_5) end,
+    Description = 'This function works independently from the Lucky Block Rarity filter',
+})
+_call485:AddDropdown('farm_mode', {
+    Callback = function(_538, _538_2, _538_3, _538_4, _538_5) end,
+    Default = 'All 2 in 1',
+    Title = 'Farm Mode',
+    Values = {
+        [1] = 'All 2 in 1',
+        [2] = 'Lucky Block Only',
+        [3] = 'Brainrot Only',
+    },
+})
+_call485:AddDropdown('carry_limit', {
+    Callback = function(_541, _541_2, _541_3, _541_4) end,
+    Default = '2',
+    Title = 'Carry Limit',
+    Values = {
+        [1] = '1',
+        [2] = '2',
+        [3] = '3',
+        [4] = '4',
+        [5] = '5',
+        [6] = '6',
+    },
+})
+_call487:AddToggle('fast_farm_wall', {
+    Callback = function(_544, _544_2, _544_3, _544_4, _544_5) end,
+    Default = false,
+    Title = 'Wall hack',
+    Description = '\u{2b50}Safe zone for long farming beta fast farm',
+})
+_call487:AddSection('AUTO FARM')
+_call487:AddToggle('auto_farm_new', {
+    Callback = function(_549, _549_2, _549_3, _549_4, _549_5, _549_6) end,
+    Default = false,
+    Title = 'Auto Farm',
+    Description = 'Farm Rarity your setting farm',
+})
+_call487:AddToggle('auto_trial_tower', {
+    Callback = function(_552, _552_2) end,
+    Default = false,
+    Title = 'Auto Trial Tower',
+    Description = '\u{1f525}you can use wallhack + unlock zoom working',
+})
+_call487:AddButton({
+    Title = '\u{1f3e0} GO SAFEZONE',
+    Callback = function(_555, _555_2, _555_3, _555_4) end,
+})
+_call487:AddButton({
+    Title = '\u{1f3f0} Go To Tower',
+    Callback = function(_558, _558_2, _558_3, _558_4, _558_5) end,
+})
+_call489:AddSection('Auto run farm coin')
+_call489:AddToggle('event_loop_toggle', {
+    Callback = function(_563, _563_2, _563_3, _563_4, _563_5) end,
+    Default = false,
+    Title = 'GO AND BACK LOOP',
+    Description = '\u{2b50}This function will stop working when it encounters the target brianrot you cant off auto farm',
+})
+_call489:AddSection('\u{1f4f1} Delta Candy/Token')
+_call489:AddDropdown('delta_mode', {
+    Callback = function(_568) end,
+    Default = 'Love + Candy',
+    Title = '\u{1f4f1} Delta Mode',
+    Values = {
+        [1] = 'Love + Candy',
+        [2] = 'Doom Coin + Ticket',
+    },
+})
+_call489:AddToggle('delta_full_auto', {
+    Callback = function(_571, _571_2, _571_3, _571_4, _571_5) end,
+    Default = false,
+    Title = 'Delta AUTO',
+    Description = 'Run & Collect',
+})
+_call489:AddSection('DOOM Event')
+_call489:AddToggle('AutoDoomCoin', {
+    Callback = function(_576, _576_2, _576_3) end,
+    Title = 'Auto Doom Coin',
+    Default = false,
+})
+_call489:AddToggle('AutoDoomTicket', {
+    Callback = function(_579, _579_2, _579_3, _579_4, _579_5, _579_6) end,
+    Title = 'Auto Doom Ticket',
+    Default = false,
+})
+_call489:AddToggle('AutoButtonDoom', {
+    Callback = function(_582, _582_2, _582_3, _582_4, _582_5, _582_6) end,
+    Title = 'Auto button Doom',
+    Default = false,
+})
+_call489:AddSection('\u{1f36c}Candy Event')
+_call489:AddToggle('auto_heart_candy', {
+    Callback = function(_587, _587_2, _587_3, _587_4, _587_5, _587_6) end,
+    Title = 'Auto HEART Candy',
+    Default = false,
+})
+_call489:AddToggle('auto_love_token', {
+    Callback = function(_590, _590_2, _590_3, _590_4, _590_5) end,
+    Title = 'Auto LOVE Token',
+    Default = false,
+})
+_call489:AddSection('\u{1f47e}Gamer Event')
+
+local _call594 = _call489:AddToggle('AutoGamerCoin', {
+    Title = 'Auto Coin and ticket',
+    Default = false,
+})
+
+_call594:OnChanged(function(_597, _597_2, _597_3, _597_4, _597_5, _597_6) end)
+_call489:AddSection('\u{1f4b0} Money Event')
+_call489:AddToggle('money_event', {
+    Callback = function(_602, _602_2, _602_3) end,
+    Title = '\u{1f4b0} Auto Money Event',
+    Default = false,
+})
+_call489:AddToggle('money_spin', {
+    Callback = function(_605) end,
+    Title = '\u{1f4b0} Money Spin',
+    Default = false,
+})
+_call489:AddToggle('auto_mission_money', {
+    Callback = function(_608) end,
+    Title = '\u{1f4b0} Mission Money',
+    Default = false,
+})
+_call489:AddSection('\u{1f6f8} Event UFO')
+_call489:AddToggle('ufo_coin', {
+    Callback = function(_613, _613_2) end,
+    Title = '\u{1f6f8} UFO COIN',
+    Default = false,
+})
+_call489:AddToggle('ufo_spin', {
+    Callback = function(_616) end,
+    Title = '\u{1f6f8} UFO SPIN',
+    Default = false,
+})
+_call489:AddSection('\u{2622}\u{fe0f} Event Radioactive')
+_call489:AddToggle('event', {
+    Title = '\u{2622}\u{fe0f}Radioactive Cion Event',
+    Callback = function(_621) end,
+})
+_call489:AddToggle('radiospin', {
+    Callback = function(_624, _624_2) end,
+    Title = '\u{2622}\u{fe0f}Radioactive Spin notwork',
+    Default = false,
+})
+_call489:AddToggle('radio_lucky', {
+    Callback = function(_627, _627_2) end,
+    Title = '\u{2622}\u{fe0f} Radioactive Lucky Blox',
+    Default = false,
+})
+_call491:AddSection('Auto money / speed / rebirth')
+_call491:AddToggle('money', {
+    Callback = function(_632, _632_2, _632_3, _632_4, _632_5, _632_6) end,
+    Title = 'Auto Collect Money',
+    Description = '\u{2b50}New update',
+})
+_call491:AddToggle('speed', {
+    Title = 'Auto Speed +1',
+    Callback = function(_635) end,
+})
+_call491:AddToggle('rebirth', {
+    Title = 'Auto Rebirth',
+    Callback = function(_638, _638_2) end,
+})
+task.spawn(function(_641, _641_2, _641_3, _641_4, _641_5) end)
+task.spawn(function(_644, _644_2) end)
+_call491:AddSection('Playier')
+_call491:AddToggle('HitboxExpand', {
+    Callback = function(_649, _649_2, _649_3, _649_4) end,
+    Title = 'Player Hitbox',
+    Default = false,
+})
+_call491:AddSlider('WaveSize', {
+    Min = 1,
+    Title = 'Player Hitbox Size',
+    Max = 50,
+    Default = 1,
+    Callback = function(_652, _652_2, _652_3, _652_4) end,
+    Rounding = 1,
+})
+_call491:AddSection('\u{1f47b}Weapon Hitbox')
+_call491:AddToggle('WeaponScale', {
+    Callback = function(_657, _657_2, _657_3, _657_4) end,
+    Title = 'ON/OFF',
+    Default = false,
+})
+_call491:AddSlider('WeaponScaleSize', {
+    Min = 1,
+    Title = 'Size',
+    Max = 50,
+    Default = 1,
+    Callback = function(_660, _660_2, _660_3, _660_4, _660_5) end,
+    Rounding = 1,
+})
+_call491:AddButton({
+    Title = 'Reset',
+    Callback = function(_663, _663_2) end,
+})
+
+local _call665 = _call481:AddTab({
+    Title = 'Settings',
+    Icon = 'settings',
+})
+
+_9:SetLibrary(_5)
+_13:SetLibrary(_5)
+_9:IgnoreThemeSettings()
+_9:SetIgnoreIndexes({})
+_13:SetFolder('FluentScriptHub')
+_9:SetFolder('FluentScriptHub/specific-game')
+_13:BuildInterfaceSection(_call665)
+_9:BuildConfigSection(_call665)
+_call481:SelectTab(1)
+_5:Notify({
+    Duration = 8,
+    Title = 'Leon',
+    Content = 'The script has been loaded.',
+})
+_9:LoadAutoloadConfig()
+
+local _call691 = Instance.new('ScreenGui')
+
+_call691.Name = 'BananaToggle'
+_call691.ResetOnSpawn = false
+_call691.Parent = _LocalPlayer24:WaitForChild('PlayerGui')
+
+local _call693 = Instance.new('ImageButton')
+
+_call693.Parent = _call691
+_call693.Size = UDim2.fromScale(0.062, 0.12)
+_call693.Position = UDim2.fromScale(0.02, 0.1)
+_call693.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+_call693.BackgroundTransparency = 0.1
+_call693.BorderSizePixel = 0
+_call693.Image = 'rbxassetid://80226210743615'
+_call693.ScaleType = Enum.ScaleType.Fit
+_call693.Active = true
+_call693.Draggable = true
+_call693.AutoButtonColor = true
+
+local _call703 = Instance.new('UICorner')
+
+_call703.CornerRadius = UDim.new(1, 1)
+_call703.Parent = _call693
+
+_call693.MouseButton1Click:Connect(function(_709, _709_2, _709_3, _709_4, _709_5) end)
