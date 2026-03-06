@@ -1,0 +1,1786 @@
+-- ts file was generated at discord.gg/25ms
+
+local fenv = getfenv()
+local _5 = loadstring(game:HttpGet('https://github.com/Footagesus/WindUI/releases/latest/download/main.lua'))()
+
+fenv.WindUI = _5
+
+local _call7 = game:GetService('Players')
+
+fenv.Players = _call7
+
+local _call9 = game:GetService('ReplicatedStorage')
+
+fenv.RS = _call9
+
+local _call11 = game:GetService('RunService')
+
+fenv.RunService = _call11
+
+local _call13 = game:GetService('UserInputService')
+
+fenv.UserInputService = _call13
+fenv.TweenService = game:GetService('TweenService')
+
+local _call17 = game:GetService('TeleportService')
+
+fenv.TeleportService = _call17
+fenv.HttpService = game:GetService('HttpService')
+
+local _call21 = game:GetService('VirtualInputManager')
+
+fenv.VirtualInputManager = _call21
+
+local _LocalPlayer22 = _call7.LocalPlayer
+
+fenv.player = _LocalPlayer22
+
+local _Character23 = _LocalPlayer22.Character
+
+fenv.character = _Character23
+fenv.humanoid = _Character23:WaitForChild('Humanoid')
+fenv.hrp = _Character23:WaitForChild('HumanoidRootPart')
+
+local _call29 = _call9:WaitForChild('RemoteEvents')
+
+fenv.RemoteEvents = _call29
+fenv.BuyRemote = _call29:WaitForChild('PurchaseShopItem')
+fenv.SellRemote = _call29:WaitForChild('SellItems')
+fenv.PlantRemote = _call29:WaitForChild('PlantSeed')
+fenv.HarvestRemote = _call29:WaitForChild('HarvestFruit')
+fenv.FavoriteRemote = _call29:FindFirstChild('ToggleFavorite')
+fenv.ClaimPlotRemote = _call29:FindFirstChild('ClaimSelectedPlot')
+fenv.ClaimQuestRemote = _call29:FindFirstChild('ClaimQuest')
+
+local _call47 = _call9:WaitForChild('Plants'):WaitForChild('Models')
+
+fenv.PlantsFolder = _call47
+fenv.RedeemRemote = _call29:WaitForChild('RedeemCode')
+
+local _call51 = Color3.fromRGB(76, 175, 80)
+
+fenv.primaryColor = _call51
+fenv.SeedItems = {
+    [1] = 'Carrot Seed',
+    [2] = 'Tomato Seed',
+    [3] = 'Potato Seed',
+    [4] = 'Wheat Seed',
+    [5] = 'Pumpkin Seed',
+    [6] = 'Corn Seed',
+    [7] = 'Strawberry Seed',
+    [8] = 'Blueberry Seed',
+    [9] = 'Onion Seed',
+    [10] = 'Garlic Seed',
+    [11] = 'Cabbage Seed',
+    [12] = 'Banana Seed',
+    [13] = 'Apple Seed',
+    [14] = 'Plum Seed',
+    [15] = 'Cherry Seed',
+    [16] = 'Mushroom Seed',
+    [17] = 'Rose Seed',
+    [18] = 'Dandelion Seed',
+    [19] = 'Bellpepper Seed',
+    [20] = 'Birch Seed',
+    [21] = 'Orange Seed',
+    [22] = 'Olive Seed',
+    [23] = 'Sunpetal Seed',
+    [24] = 'Goldenberry Seed',
+    [25] = 'Amberpine Seed',
+    [26] = 'Emberwood Seed',
+    [27] = 'Dawn Blossom Seed',
+    [28] = 'Dawnfruit Seed',
+    [29] = 'Beetroot Seed',
+    [30] = 'Bamboo Seed',
+    [31] = 'Mango Seed',
+    [32] = 'Biohazard Melon Seed',
+    [33] = 'Lablush Berry Seed',
+    [34] = 'Starvine Seed',
+    [35] = 'Radiant Petal Seed',
+    [36] = 'Octobranch Seed',
+}
+fenv.Seeds = {
+    [1] = 'Carrot',
+    [2] = 'Tomato',
+    [3] = 'Potato',
+    [4] = 'Wheat',
+    [5] = 'Pumpkin',
+    [6] = 'Corn',
+    [7] = 'Strawberry',
+    [8] = 'Blueberry',
+    [9] = 'Onion',
+    [10] = 'Garlic',
+    [11] = 'Cabbage',
+    [12] = 'Banana',
+    [13] = 'Apple',
+    [14] = 'Plum',
+    [15] = 'Cherry',
+    [16] = 'Mushroom',
+    [17] = 'Rose',
+    [18] = 'Dandelion',
+    [19] = 'Bellpepper',
+    [20] = 'Birch',
+    [21] = 'Orange',
+    [22] = 'Olive',
+    [23] = 'Beetroot',
+    [24] = 'Sunpetal',
+    [25] = 'Goldenberry',
+    [26] = 'Amberpine',
+    [27] = 'Emberwood',
+    [28] = 'Dawn Blossom',
+    [29] = 'Dawnfruit',
+    [30] = 'Bamboo',
+    [31] = 'Mango',
+    [32] = 'Biohazard Melon',
+    [33] = 'Lablush Berry',
+    [34] = 'Starvine',
+    [35] = 'Radiant Petal',
+    [36] = 'Octobranch',
+}
+fenv.Gears = {
+    [1] = 'Watering Can',
+    [2] = 'Basic Sprinkler',
+    [3] = 'Harvest All',
+    [4] = 'Turbo Sprinkler',
+    [5] = 'Favorite Tool',
+    [6] = 'Super Sprinkler',
+}
+fenv.RedeemCodes = {
+    [1] = 'RELEASE',
+    [2] = 'DAWN',
+    [3] = '358',
+    [4] = 'DAWNFRUIT',
+    [5] = 'THANKYOU',
+    [6] = 'ADMIN',
+    [7] = 'GIFT',
+}
+fenv.Traits = {
+    [1] = 'None',
+    [2] = 'Unripe',
+    [3] = 'Ripened',
+    [4] = 'Lush',
+}
+fenv.Mutations = {
+    [1] = 'None',
+    [2] = 'Soaked',
+    [3] = 'Foggy',
+    [4] = 'Chilled',
+    [5] = 'Flooded',
+    [6] = 'Snowy',
+    [7] = 'Sandy',
+    [8] = 'Frostbit',
+    [9] = 'Mossy',
+    [10] = 'Shocked',
+    [11] = 'Muddy',
+    [12] = 'Starstruck',
+}
+fenv.Variants = {
+    [1] = 'None',
+    [2] = 'Silver',
+    [3] = 'Gold',
+}
+fenv.Rarities = {
+    [1] = 'Common',
+    [2] = 'Uncommon',
+    [3] = 'Rare',
+    [4] = 'Epic',
+    [5] = 'Legendary',
+}
+fenv.PlotNames = {
+    [1] = 'Plot1',
+    [2] = 'Plot2',
+    [3] = 'Plot3',
+    [4] = 'Plot4',
+    [5] = 'Plot5',
+    [6] = 'Plot6',
+}
+fenv.autoSeed = false
+fenv.autoGear = false
+fenv.autoSell = false
+fenv.autoHarvest = false
+fenv.autoPlant = false
+fenv.autoFavorite = false
+fenv.autoClaimPlot = false
+fenv.autoClaimAllQuests = false
+fenv.alwaysRenderPlot = false
+fenv.antiAfk = false
+fenv.SELL_POSITION = Vector3.new(149, 204, 672)
+fenv.BUY_SEED_POSITION = Vector3.new(177, 204, 672)
+fenv.BUY_GEAR_POSITION = Vector3.new(212, 204, 608)
+fenv.BUY_QUEST_POSITION = Vector3.new(112, 204, 635)
+fenv.selectedSeedItems = {}
+fenv.selectedGears = {}
+fenv.selectedSeeds = {}
+fenv.harvestMode = 'Filter'
+fenv.harvestFilterPlants = {}
+fenv.harvestFilterTraits = {
+    None = true,
+    Lush = true,
+    Unripe = true,
+    Ripened = true,
+}
+fenv.harvestFilterMutations = {None = true}
+fenv.harvestFilterVariants = {None = true}
+fenv.harvestFilterRarities = {
+    Legendary = true,
+    Common = true,
+    Epic = true,
+    Uncommon = true,
+    Rare = true,
+}
+fenv.harvestMinMultiplier = 0
+fenv.harvestOnlyLush = false
+fenv.sellMode = 'Hand (Filtered)'
+fenv.sellFilterPlants = {}
+fenv.sellFilterTraits = {Lush = true}
+fenv.sellFilterMutations = {None = true}
+fenv.sellFilterVariants = {None = true}
+fenv.sellFilterRarities = {
+    Legendary = true,
+    Common = true,
+    Epic = true,
+    Uncommon = true,
+    Rare = true,
+}
+fenv.favoriteFilterPlants = {}
+fenv.favoriteFilterTraits = {}
+fenv.favoriteFilterMutations = {}
+fenv.favoriteFilterVariants = {}
+fenv.favoriteFilterRarities = {}
+fenv.selectedPlotName = 'Plot1'
+fenv.renderConnections = {}
+fenv.FLYING = false
+fenv.flyEnabled = false
+fenv.flySpeed = 50
+fenv.QEfly = true
+fenv.flyKeyDown = nil
+fenv.flyKeyUp = nil
+fenv.flyBodyGyro = nil
+fenv.flyBodyVelocity = nil
+fenv.flyHeartbeatConn = nil
+fenv.flyDiedConn = nil
+fenv.getRoot = function(_60, _60_2)
+    return _60:FindFirstChild('HumanoidRootPart')
+end
+fenv.stopFly_IY = function(_63)
+    fenv.FLYING = false
+
+    local _ = fenv.flyKeyDown
+    local _ = fenv.flyKeyUp
+    local _ = fenv.flyHeartbeatConn
+    local _ = fenv.flyDiedConn
+    local _ = fenv.flyBodyGyro
+    local _ = fenv.flyBodyVelocity
+    local _call72 = _LocalPlayer22.Character:FindFirstChildWhichIsA('Humanoid')
+
+    _call72.PlatformStand = false
+
+    local _workspaceCurrentCamera73 = workspace.CurrentCamera
+
+    _workspaceCurrentCamera73.CameraType = Enum.CameraType.Custom
+end
+fenv.startFly_IY = function()
+    local _ = fenv.FLYING
+    local _Character78 = _LocalPlayer22.Character
+    local _call80 = _Character78:FindFirstChildWhichIsA('Humanoid')
+    local _call82 = _Character78:FindFirstChild('HumanoidRootPart')
+
+    fenv.SPEED = 0
+
+    local _call84 = Instance.new('BodyGyro')
+
+    fenv.flyBodyGyro = _call84
+
+    local _call86 = Instance.new('BodyVelocity')
+
+    fenv.flyBodyVelocity = _call86
+    _call84.P = 90000
+    _call84.MaxTorque = Vector3.new(9000000000, 9000000000, 9000000000)
+    _call84.CFrame = _call82.CFrame
+    _call84.Parent = _call82
+    _call86.MaxForce = Vector3.new(9000000000, 9000000000, 9000000000)
+    _call86.Velocity = Vector3.new(0, 0, 0)
+    _call86.Parent = _call82
+    fenv.FLYING = true
+    _call80.PlatformStand = true
+
+    local _call96 = _call13.InputBegan:Connect(function(_97, _97_2, _97_3, _97_4) end)
+
+    fenv.flyKeyDown = _call96
+
+    local _call100 = _call13.InputEnded:Connect(function(_101, _101_2, _101_3, _101_4, _101_5) end)
+
+    fenv.flyKeyUp = _call100
+
+    local _call104 = _call11.Heartbeat:Connect(function(_105, _105_2, _105_3, _105_4, _105_5)
+        local _workspaceCurrentCamera106 = workspace.CurrentCamera
+
+        fenv.SPEED = 0
+        _call86.Velocity = ((((_workspaceCurrentCamera106.CFrame.LookVector * 0) + (_workspaceCurrentCamera106.CFrame.RightVector * 0)) + (_workspaceCurrentCamera106.CFrame.UpVector * 0)) * 0)
+        _call84.CFrame = _workspaceCurrentCamera106.CFrame
+    end)
+
+    fenv.flyHeartbeatConn = _call104
+
+    local _call122 = _call80.Died:Connect(function(_123)
+        fenv.FLYING = false
+
+        _call96:Disconnect()
+
+        fenv.flyKeyDown = nil
+
+        _call100:Disconnect()
+
+        fenv.flyKeyUp = nil
+
+        _call104:Disconnect()
+
+        fenv.flyHeartbeatConn = nil
+
+        _call84:Destroy()
+
+        fenv.flyBodyGyro = nil
+
+        _call86:Destroy()
+
+        fenv.flyBodyVelocity = nil
+
+        local _call136 = _LocalPlayer22.Character:FindFirstChildWhichIsA('Humanoid')
+
+        _call136.PlatformStand = false
+
+        local _workspaceCurrentCamera137 = workspace.CurrentCamera
+
+        _workspaceCurrentCamera137.CameraType = Enum.CameraType.Custom
+    end)
+
+    fenv.flyDiedConn = _call122
+end
+fenv.noclipEnabled = false
+fenv.noclipConnection = nil
+fenv.toggleNoclip = function(_140, _140_2, _140_3, _140_4)
+    local _ = fenv.noclipConnection
+    local _call144 = _call11.Stepped:Connect(function(_145, _145_2) end)
+
+    fenv.noclipConnection = _call144
+end
+fenv.antiAfkConn = nil
+fenv.startAntiAfk = function(_146, _146_2, _146_3, _146_4)
+    local _ = fenv.antiAfkConn
+    local _call149 = task.spawn(function(_150, _150_2)
+        local _ = fenv.antiAfk
+    end)
+
+    fenv.antiAfkConn = _call149
+end
+fenv.teleportType = 'Instant'
+fenv.playerList = {}
+fenv.selectedPlayer = ''
+fenv.playerDropdown = nil
+fenv.teleportToPlayerEnabled = false
+fenv.teleportToPlayerConnection = nil
+fenv.GetHum = function(_152, _152_2, _152_3, _152_4, _152_5)
+    return _LocalPlayer22.Character:FindFirstChildOfClass('Humanoid')
+end
+fenv.updateCharacterRefs = function(_156, _156_2, _156_3)
+    local _Character157 = _LocalPlayer22.Character
+
+    fenv.character = _Character157
+    fenv.humanoid = _Character157:FindFirstChild('Humanoid')
+    fenv.hrp = _Character157:FindFirstChild('HumanoidRootPart')
+end
+fenv.teleportToPosition = function(_162, _162_2, _162_3, _162_4, _162_5)
+    local _Character163 = _LocalPlayer22.Character
+
+    fenv.character = _Character163
+    fenv.humanoid = _Character163:FindFirstChild('Humanoid')
+
+    local _call167 = _Character163:FindFirstChild('HumanoidRootPart')
+
+    fenv.hrp = _call167
+    _call167.CFrame = (_162 * CFrame.new(3, 0, 3))
+end
+fenv.updatePlayerList = function(_171, _171_2, _171_3)
+    fenv.playerList = {}
+
+    for _174, _174_2 in ipairs(_call7:GetPlayers())do
+        local _ = _174_2 == _LocalPlayer22
+    end
+
+    return {
+        [1] = _174_2.Name,
+    }
+end
+fenv.safeUpdateDropdown = function(_177, _177_2, _177_3, _177_4, _177_5, _177_6, _177_7)
+    local _ = #_177_2
+    local _ = _177.Refresh
+
+    _177:Refresh(_177_2)
+
+    local _ = _177.SetValue
+
+    _177:SetValue(_177_3)
+end
+fenv.getServerId = function()
+    return game.JobId
+end
+fenv.rejoinServer = function()
+    _call17:TeleportToPlaceInstance(game.PlaceId, game.JobId)
+end
+fenv.serverHop = function(_192, _192_2, _192_3, _192_4)
+    local _ = fenv.httprequest
+    local _ = game.PlaceId
+
+    error("line 2: invalid argument #2 to 'format' (string expected, got table)")
+end
+fenv.serverHopLowerPlayer = function(_195, _195_2, _195_3, _195_4)
+    local _ = game.PlaceId
+
+    error("line 2: invalid argument #2 to 'format' (string expected, got table)")
+end
+fenv.joinServer = function(_197, _197_2, _197_3, _197_4, _197_5, _197_6)
+    _call17:TeleportToPlaceInstance(game.PlaceId, _197)
+end
+fenv.PLOT_POSITIONS = {
+    Plot6 = Vector3.new(-103, 205, 346),
+    Plot3 = Vector3.new(418, 218, 777),
+    Plot1 = Vector3.new(197, 189, 312),
+    Plot5 = Vector3.new(-133, 200, 833),
+    Plot2 = Vector3.new(429, 212, 410),
+    Plot4 = Vector3.new(193, 190, 1003),
+}
+fenv.findPlayerPlotPosition = function(_213, _213_2, _213_3)
+    local _call215 = workspace:FindFirstChild('Plots')
+    local _call219 = _call215:FindFirstChild('Plot6'):FindFirstChild('Owner')
+
+    _call219:IsA('StringValue')
+
+    local _ = _call219.Value == _LocalPlayer22.Name
+    local _call228 = _call215:FindFirstChild('Plot3'):FindFirstChild('Owner')
+
+    _call228:IsA('StringValue')
+
+    local _ = _call228.Value == _LocalPlayer22.Name
+    local _call237 = _call215:FindFirstChild('Plot1'):FindFirstChild('Owner')
+
+    _call237:IsA('StringValue')
+
+    local _ = _call237.Value == _LocalPlayer22.Name
+    local _call246 = _call215:FindFirstChild('Plot5'):FindFirstChild('Owner')
+
+    _call246:IsA('StringValue')
+
+    local _ = _call246.Value == _LocalPlayer22.Name
+    local _call255 = _call215:FindFirstChild('Plot2'):FindFirstChild('Owner')
+
+    _call255:IsA('StringValue')
+
+    local _ = _call255.Value == _LocalPlayer22.Name
+    local _call264 = _call215:FindFirstChild('Plot4'):FindFirstChild('Owner')
+
+    _call264:IsA('StringValue')
+
+    local _ = _call264.Value == _LocalPlayer22.Name
+end
+fenv.playerOwnsPlot = function(_270, _270_2, _270_3, _270_4, _270_5)
+    for _275, _275_2 in pairs(workspace:FindFirstChild('Plots'):GetChildren())do
+        local _Value278 = _275_2:FindFirstChild('Owner').Value
+
+        type(_Value278)
+        type(_Value278)
+    end
+
+    return false
+end
+fenv.passesHarvestFilter = function(_279, _279_2)
+    _279_2:GetAttribute('FullyGrown')
+    _279_2:GetAttribute('RipenessStage')
+    _279_2:GetAttribute('Mutation')
+
+    return false
+end
+fenv.doHarvest = function(_286, _286_2, _286_3, _286_4, _286_5)
+    local _Character287 = _LocalPlayer22.Character
+
+    fenv.character = _Character287
+    fenv.humanoid = _Character287:FindFirstChild('Humanoid')
+
+    local _call291 = _Character287:FindFirstChild('HumanoidRootPart')
+
+    fenv.hrp = _call291
+
+    for _297, _297_2 in ipairs(workspace:FindFirstChild('ClientPlants'):GetChildren())do
+        _297_2:IsA('Model')
+
+        local _ = _297_2.PrimaryPart.Position
+
+        for _304, _304_2 in ipairs(_297_2:GetChildren())do
+            _304_2:IsA('Model')
+        end
+
+        local _ = _304_2.PrimaryPart.Position
+    end
+    for _313, _313_2 in ipairs(workspace:FindFirstChild('Plots'):GetChildren())do
+        for _318, _318_2 in ipairs(_313_2:FindFirstChild('Plants'):GetChildren())do
+            _318_2:IsA('Model')
+
+            local _ = _318_2.PrimaryPart.Position
+
+            for _325, _325_2 in ipairs(_318_2:GetChildren())do
+                _325_2:IsA('Model')
+            end
+
+            local _ = _325_2.PrimaryPart.Position
+        end
+        for _332, _332_2 in ipairs(_313_2:GetChildren())do
+            _332_2:IsA('Model')
+
+            local _ = _332_2.Name
+
+            for _338, _338_2 in ipairs(_332_2:GetChildren())do
+                _338_2:IsA('Model')
+
+                local _ = _338_2.PrimaryPart.Position
+
+                for _345, _345_2 in ipairs(_338_2:GetChildren())do
+                    _345_2:IsA('Model')
+                end
+
+                local _ = _345_2.PrimaryPart.Position
+            end
+        end
+    end
+
+    _304_2:GetAttribute('FullyGrown')
+    _304_2:GetAttribute('RipenessStage')
+    _304_2:GetAttribute('Mutation')
+    _325_2:GetAttribute('FullyGrown')
+    _325_2:GetAttribute('RipenessStage')
+    _325_2:GetAttribute('Mutation')
+    _345_2:GetAttribute('FullyGrown')
+    _345_2:GetAttribute('RipenessStage')
+    _345_2:GetAttribute('Mutation')
+    task.wait(0.2)
+
+    _call291.CFrame = _call291.CFrame
+
+    return 0
+end
+fenv.findFruitTool = function(_368, _368_2, _368_3, _368_4, _368_5, _368_6, _368_7, _368_8)
+    for _372, _372_2 in ipairs(_LocalPlayer22.Backpack:GetChildren())do
+        _372_2:IsA('Tool')
+        _372_2.Name:find('Seed', 1, true)
+    end
+
+    local _ = _LocalPlayer22.Character
+
+    for _382, _382_2 in ipairs(_LocalPlayer22.Character:GetChildren())do
+        _382_2:IsA('Tool')
+        _382_2.Name:find('Seed', 1, true)
+    end
+end
+fenv.findSeedTool = function(_388, _388_2, _388_3, _388_4)
+    for _392, _392_2 in ipairs(_LocalPlayer22.Backpack:GetChildren())do
+        local _ = _392_2.Name == _388 .. ' Seed'
+        local _ = _392_2.Name == _388
+
+        _392_2.Name:find(_388, 1, true)
+
+        return _392_2
+    end
+end
+fenv.startRealTimeFollow = function(_401, _401_2, _401_3)
+    local _ = fenv.teleportToPlayerConnection
+    local _ = fenv.teleportToPlayerEnabled
+end
+fenv.pressKey = function(_404, _404_2, _404_3, _404_4, _404_5, _404_6)
+    _call21:SendKeyEvent(true, _404, false, game)
+    keypress(_404_2)
+    task.wait(_404_3)
+
+    local _ = _404_3 + 0.021710635940240405
+
+    _call21:SendKeyEvent(false, _404, false, game)
+    keyrelease(_404_2)
+    task.wait(0.05)
+end
+fenv.pressS = function(_412, _412_2)
+    _call21:SendKeyEvent(true, Enum.KeyCode.S, false, game)
+    keypress(83)
+    task.wait(0.12)
+    _call21:SendKeyEvent(false, Enum.KeyCode.S, false, game)
+    keyrelease(83)
+end
+fenv.stopAlwaysRender = function()
+    fenv.renderConnections = {}
+end
+fenv.getLoadingLabel = function(_424, _424_2, _424_3, _424_4)
+    local _call432 = _LocalPlayer22:FindFirstChild('PlayerGui'):FindFirstChild('LoadingScreenGui'):FindFirstChild('Frame'):FindFirstChild('LoadingAssets')
+
+    _call432:IsA('TextLabel')
+
+    return _call432
+end
+fenv.checkAndPressS = function(_435, _435_2, _435_3, _435_4)
+    local _call443 = _LocalPlayer22:FindFirstChild('PlayerGui'):FindFirstChild('LoadingScreenGui'):FindFirstChild('Frame'):FindFirstChild('LoadingAssets')
+
+    _call443:IsA('TextLabel')
+
+    local _ = _call443.Text
+end
+fenv.startAlwaysRender = function(_447, _447_2, _447_3)
+    fenv.renderConnections = {}
+
+    _LocalPlayer22:FindFirstChild('PlayerGui'):FindFirstChild('LoadingScreenGui'):FindFirstChild('Frame'):FindFirstChild('LoadingAssets'):IsA('TextLabel')
+    error('internal 557: <25ms: infinitelooperror>')
+end
+fenv.autoClaimPlotThread = nil
+fenv.startAutoClaimPlot = function() end
+fenv.doSell = function(_460) end
+fenv.autoSeedThread = nil
+fenv.autoGearThread = nil
+fenv.autoQuestThread = nil
+fenv.autoSellThread = nil
+fenv.startAutoSell = function(_461, _461_2, _461_3, _461_4, _461_5) end
+fenv.startAutoSeed = function(_462, _462_2) end
+fenv.startAutoGear = function(_463, _463_2, _463_3, _463_4) end
+fenv.startAutoQuest = function() end
+fenv.farmCoordThread = nil
+fenv.autoHarvestThread = nil
+fenv.startAutoHarvestLoop = function(_465, _465_2, _465_3, _465_4) end
+fenv.runFarmCycle = function(_466, _466_2, _466_3) end
+fenv.startFarmCoordinator = function(_467, _467_2, _467_3, _467_4) end
+
+local _ = fenv.farmCoordThread
+local _call470 = task.spawn(function(_471, _471_2, _471_3) end)
+
+fenv.farmCoordThread = _call470
+fenv.AUTOLOAD_PATH = 'CyraaHub/autoload.txt'
+fenv.getAutoLoadName = function() end
+fenv.setAutoLoadName = function(_473, _473_2, _473_3, _473_4) end
+
+_5:AddTheme({
+    Outline = Color3.fromRGB(255, 255, 255),
+    Text = Color3.fromRGB(255, 255, 255),
+    Placeholder = Color3.fromRGB(122, 122, 122),
+    Name = 'Garden Theme',
+    Dialog = Color3.fromRGB(22, 22, 22),
+    Button = Color3.fromRGB(56, 142, 60),
+    Background = Color3.fromRGB(20, 60, 25),
+    Icon = Color3.fromRGB(255, 255, 255),
+    Accent = Color3.fromRGB(76, 175, 80),
+})
+
+local _call511 = _5:CreateWindow({
+    NewElements = true,
+    Color = _call51,
+    MaxSize = Vector2.new(900, 580),
+    Folder = 'CyraaHub',
+    SubTitle = 'v1.0.6',
+    BackgroundImageTransparency = 0.42,
+    MinSize = Vector2.new(580, 370),
+    Icon = 'rbxthumb://type=Asset&id=106624117427771&w=150&h=150',
+    Size = UDim2.fromOffset(580, 370),
+    SideBarWidth = 200,
+    OpenButton = {
+        StrokeThickness = 3,
+        Color = ColorSequence.new(Color3.fromRGB(48, 200, 80), Color3.fromRGB(120, 230, 60)),
+        OnlyMobile = false,
+        TextColor = _call51,
+        Title = 'by komtolmmek2 script',
+        BackgroundColor = Color3.fromRGB(0, 0, 0),
+        Draggable = true,
+        Enabled = true,
+        Icon = 'rbxthumb://type=Asset&id=106624117427771&w=150&h=150',
+        CornerRadius = UDim.new(1, 0),
+    },
+    Resizable = true,
+    Title = 'Cyraa Hub',
+    Transparent = true,
+    Topbar = {
+        Height = 44,
+        Color = Color3.fromRGB(0, 0, 0),
+        ButtonsType = 'Mac',
+    },
+    ScrollBarEnabled = false,
+    Theme = 'Garden Theme',
+    HideSearchBar = false,
+})
+
+fenv.Window = _call511
+
+local _ConfigManager512 = _call511.ConfigManager
+
+fenv.ConfigManager = _ConfigManager512
+
+local _call514 = _ConfigManager512:CreateConfig('default')
+
+fenv.currentConfig = _call514
+
+_call511:Tag({
+    Color = Color3.fromRGB(255, 255, 255),
+    Border = true,
+    Title = 'v1.0.6',
+    Icon = 'github',
+})
+_call511:Tag({
+    Color = Color3.fromRGB(20, 60, 25),
+    Border = true,
+    Title = 'Garden Horizons',
+    Icon = 'rbxthumb://type=Asset&id=106624117427771&w=150&h=150',
+})
+
+local _call524 = _call511:Tab({
+    Color = _call51,
+    Title = 'Home',
+    Icon = 'solar:home-2-bold',
+})
+
+fenv.HomeTab = _call524
+
+_call524:Section({
+    Title = 'Update Log',
+})
+_call524:Paragraph({
+    ImageSize = 20,
+    Image = 'solar:document-text-bold',
+    Title = 'Version 1.0.6',
+    Desc = '[/] Fixed cant buy gear on shop\n[-] Removed Claim Plot Now button\n[+] New Fruit\n[+] New Code',
+})
+_call524:Section({
+    Title = 'Game Information',
+})
+
+local _call532 = _call524:Paragraph({
+    ImageSize = 20,
+    Image = 'timer',
+    Title = 'Game Time',
+    Desc = '0',
+})
+
+fenv.GameTimeParagraph = _call532
+
+task.spawn(function(_535) end)
+
+local _call537 = _call524:Paragraph({
+    ImageSize = 20,
+    Image = 'monitor',
+    Title = 'FPS',
+    Desc = '0',
+})
+
+fenv.FpsParagraph = _call537
+
+task.spawn(function(_540, _540_2, _540_3, _540_4, _540_5) end)
+
+local _call542 = _call524:Paragraph({
+    ImageSize = 20,
+    Image = 'signal',
+    Title = 'Ping',
+    Desc = '0',
+})
+
+fenv.PingParagraph = _call542
+
+task.spawn(function(_545, _545_2, _545_3, _545_4, _545_5) end)
+_call524:Section({
+    Title = 'Config Management',
+})
+
+fenv.configNameInput = 'default'
+fenv.getAllConfigs = function(_548, _548_2, _548_3, _548_4) end
+fenv.configDropdown = nil
+fenv.autoLoadDropdown = nil
+
+_call524:Input({
+    Placeholder = 'Enter config name...',
+    Title = 'Config Name',
+    Callback = function(_551, _551_2, _551_3) end,
+})
+
+local _call553 = _ConfigManager512:AllConfigs()
+local _ = #_call553
+local _call556 = _call524:Dropdown({
+    Value = 'default',
+    Callback = function(_557, _557_2, _557_3, _557_4, _557_5, _557_6) end,
+    Title = 'Select Config',
+    Values = _call553,
+})
+
+fenv.configDropdown = _call556
+fenv.refreshConfigDropdowns = function() end
+
+_call524:Button({
+    Title = 'Refresh List',
+    Callback = function() end,
+})
+_call524:Button({
+    Title = 'Save Config',
+    Callback = function(_564, _564_2) end,
+})
+_call524:Button({
+    Title = 'Load Config',
+    Callback = function(_567, _567_2) end,
+})
+_call524:Button({
+    Title = 'Delete Config',
+    Callback = function(_570, _570_2, _570_3, _570_4) end,
+})
+_call524:Section({
+    Title = 'Auto Load Config',
+})
+
+local _call574 = _ConfigManager512:AllConfigs()
+local _ = #_call574
+local _call578 = _call524:Dropdown({
+    Value = _call574[1],
+    Callback = function(_579, _579_2, _579_3, _579_4, _579_5) end,
+    Title = 'Config for Auto Load',
+    Values = _call574,
+})
+
+fenv.autoLoadDropdown = _call578
+
+_call524:Button({
+    Title = 'Set Auto Load',
+    Callback = function(_582, _582_2, _582_3) end,
+})
+_call524:Button({
+    Title = 'Disable Auto Load',
+    Callback = function(_585, _585_2, _585_3) end,
+})
+_call524:Section({
+    Title = 'Social Links',
+})
+_call524:Paragraph({
+    Buttons = {
+        [1] = {
+            Title = 'Copy Discord Link',
+            Callback = function(_590, _590_2, _590_3, _590_4, _590_5) end,
+        },
+    },
+    Title = 'Discord Server',
+    Desc = 'Cyraa Hub Discord Link!',
+})
+_call524:Paragraph({
+    Buttons = {
+        [1] = {
+            Title = 'Copy Link',
+            Callback = function(_593) end,
+        },
+    },
+    Title = 'TikTok',
+    Desc = 'komtolmmek2 Script',
+})
+
+local _call595 = _call511:Tab({
+    Color = _call51,
+    Title = 'Farm',
+    Icon = 'solar:cpu-bold',
+})
+
+fenv.FarmTab = _call595
+
+local _call597 = _call595:Section({
+    Title = 'Auto Harvest',
+})
+
+fenv.HarvestSection = _call597
+fenv.plantNames = {}
+
+for _600, _600_2 in pairs(_call47:GetChildren())do
+    local _ = _600_2.Name
+end
+
+local _call603 = _call595:Dropdown({
+    Title = 'Harvest Mode',
+    Section = _call597,
+    Flag = 'HarvestMode',
+    Value = 'Filter',
+    Callback = function(_604, _604_2, _604_3) end,
+    Values = {
+        [1] = 'All',
+        [2] = 'Filter',
+        [3] = 'No Mutation',
+        [4] = 'Mutation Only',
+    },
+})
+
+fenv.HarvestModeDD = _call603
+
+_call514:Register('HarvestMode', _call603)
+_call595:Dropdown({
+    Title = 'Plant Type Filter',
+    Section = _call597,
+    Multi = true,
+    Callback = function(_609, _609_2, _609_3) end,
+    Values = {[1] = _Name601},
+})
+
+local _call611 = _call595:Dropdown({
+    Value = {
+        [1] = 'Lush',
+    },
+    Title = 'Trait Filter',
+    Section = _call597,
+    Flag = 'HarvestTrait',
+    Multi = true,
+    Callback = function(_612, _612_2, _612_3) end,
+    Values = {
+        [1] = 'None',
+        [2] = 'Unripe',
+        [3] = 'Ripened',
+        [4] = 'Lush',
+    },
+})
+
+fenv.HarvestTraitDD = _call611
+
+_call514:Register('HarvestTrait', _call611)
+
+local _call616 = _call595:Dropdown({
+    Value = {
+        [1] = 'None',
+    },
+    Title = 'Mutation Filter',
+    Section = _call597,
+    Flag = 'HarvestMut',
+    Multi = true,
+    Callback = function(_617, _617_2, _617_3, _617_4, _617_5, _617_6) end,
+    Values = {
+        [1] = 'None',
+        [2] = 'Soaked',
+        [3] = 'Foggy',
+        [4] = 'Chilled',
+        [5] = 'Flooded',
+        [6] = 'Snowy',
+        [7] = 'Sandy',
+        [8] = 'Frostbit',
+        [9] = 'Mossy',
+        [10] = 'Shocked',
+        [11] = 'Muddy',
+        [12] = 'Starstruck',
+    },
+})
+
+fenv.HarvestMutDD = _call616
+
+_call514:Register('HarvestMut', _call616)
+
+local _call621 = _call595:Dropdown({
+    Value = {
+        [1] = 'None',
+    },
+    Title = 'Variant Filter',
+    Section = _call597,
+    Flag = 'HarvestVar',
+    Multi = true,
+    Callback = function(_622, _622_2, _622_3, _622_4) end,
+    Values = {
+        [1] = 'None',
+        [2] = 'Silver',
+        [3] = 'Gold',
+    },
+})
+
+fenv.HarvestVarDD = _call621
+
+_call514:Register('HarvestVar', _call621)
+
+local _call626 = _call595:Dropdown({
+    Value = {
+        [1] = 'Common',
+        [2] = 'Uncommon',
+        [3] = 'Rare',
+        [4] = 'Epic',
+        [5] = 'Legendary',
+    },
+    Title = 'Rarity Filter',
+    Section = _call597,
+    Flag = 'HarvestRar',
+    Multi = true,
+    Callback = function(_627, _627_2) end,
+    Values = {
+        [1] = 'Common',
+        [2] = 'Uncommon',
+        [3] = 'Rare',
+        [4] = 'Epic',
+        [5] = 'Legendary',
+    },
+})
+
+fenv.HarvestRarDD = _call626
+
+_call514:Register('HarvestRar', _call626)
+
+local _call631 = _call595:Slider({
+    Callback = function(_632, _632_2, _632_3, _632_4) end,
+    Title = 'Min Ripeness Multiplier',
+    Section = _call597,
+    Flag = 'HarvestMin',
+    Value = {
+        Min = 0,
+        Default = 0,
+        Max = 7,
+    },
+    Step = 0.5,
+    Desc = 'If 0, disabled',
+})
+
+fenv.HarvestMinSlider = _call631
+
+_call514:Register('HarvestMin', _call631)
+
+local _call636 = _call595:Toggle({
+    Title = 'Lush Only',
+    Section = _call597,
+    Flag = 'HarvestLush',
+    Callback = function(_637) end,
+    Value = false,
+})
+
+fenv.LushOnlyToggle = _call636
+
+_call514:Register('HarvestLush', _call636)
+_call595:Button({
+    Callback = function(_642, _642_2, _642_3) end,
+    Title = 'Harvest Now',
+    Section = _call597,
+})
+
+local _call644 = _call595:Toggle({
+    Title = 'Auto Harvest',
+    Section = _call597,
+    Flag = 'AutoHarvest',
+    Callback = function(_645, _645_2, _645_3, _645_4) end,
+    Value = false,
+})
+
+fenv.AutoHarvestToggle = _call644
+
+_call514:Register('AutoHarvest', _call644)
+
+local _call649 = _call595:Section({
+    Title = 'Auto Plant',
+})
+
+fenv.PlantSection = _call649
+fenv.SeedsWithAll = {
+    [1] = 'All',
+}
+
+_call595:Dropdown({
+    Title = 'Select Seeds to Plant',
+    Section = _call649,
+    Multi = true,
+    Callback = function(_652, _652_2, _652_3, _652_4) end,
+    Values = {
+        [1] = 'All',
+        [2] = 'Carrot',
+        [3] = 'Tomato',
+        [4] = 'Potato',
+        [5] = 'Wheat',
+        [6] = 'Pumpkin',
+        [7] = 'Corn',
+        [8] = 'Strawberry',
+        [9] = 'Blueberry',
+        [10] = 'Onion',
+        [11] = 'Garlic',
+        [12] = 'Cabbage',
+        [13] = 'Banana',
+        [14] = 'Apple',
+        [15] = 'Plum',
+        [16] = 'Cherry',
+        [17] = 'Mushroom',
+        [18] = 'Rose',
+        [19] = 'Dandelion',
+        [20] = 'Bellpepper',
+        [21] = 'Birch',
+        [22] = 'Orange',
+        [23] = 'Olive',
+        [24] = 'Beetroot',
+        [25] = 'Sunpetal',
+        [26] = 'Goldenberry',
+        [27] = 'Amberpine',
+        [28] = 'Emberwood',
+        [29] = 'Dawn Blossom',
+        [30] = 'Dawnfruit',
+        [31] = 'Bamboo',
+        [32] = 'Mango',
+        [33] = 'Biohazard Melon',
+        [34] = 'Lablush Berry',
+        [35] = 'Starvine',
+        [36] = 'Radiant Petal',
+        [37] = 'Octobranch',
+    },
+})
+_call595:Button({
+    Callback = function(_655, _655_2) end,
+    Title = 'Plant Now',
+    Section = _call649,
+})
+
+local _call657 = _call595:Toggle({
+    Title = 'Auto Plant Seeds',
+    Section = _call649,
+    Flag = 'AutoPlant',
+    Callback = function(_658, _658_2) end,
+    Value = false,
+})
+
+fenv.AutoPlantToggle = _call657
+
+_call514:Register('AutoPlant', _call657)
+
+local _call662 = _call595:Section({
+    Title = 'Claim Plot',
+})
+
+fenv.ClaimSection = _call662
+
+local _call664 = _call595:Toggle({
+    Title = 'Auto Claim Plot',
+    Section = _call662,
+    Flag = 'AutoClaimPlot',
+    Callback = function(_665, _665_2, _665_3, _665_4, _665_5) end,
+    Value = false,
+})
+
+fenv.AutoClaimPlotToggle = _call664
+
+_call514:Register('AutoClaimPlot', _call664)
+
+local _call669 = _call595:Toggle({
+    Title = 'Always Render Plot',
+    Section = _call662,
+    Flag = 'AlwaysRender',
+    Callback = function(_670, _670_2, _670_3, _670_4, _670_5, _670_6) end,
+    Value = false,
+})
+
+fenv.AlwaysRenderToggle = _call669
+
+_call514:Register('AlwaysRender', _call669)
+
+local _call674 = _call595:Section({
+    Title = 'Quest',
+})
+
+fenv.QuestSection = _call674
+
+_call595:Button({
+    Callback = function() end,
+    Title = 'Claim All Now',
+    Section = _call674,
+})
+
+local _call679 = _call595:Toggle({
+    Title = 'Auto Claim All Quests',
+    Section = _call674,
+    Flag = 'AutoQuest',
+    Callback = function(_680) end,
+    Value = false,
+})
+
+fenv.AutoQuestToggle = _call679
+
+_call514:Register('AutoQuest', _call679)
+
+local _call684 = _call511:Tab({
+    Color = _call51,
+    Title = 'Shop',
+    Icon = 'solar:cart-bold',
+})
+
+fenv.ShopTab = _call684
+
+local _call686 = _call684:Section({
+    Title = 'Auto Buy Seeds',
+})
+
+fenv.ShopSeedSection = _call686
+
+_call684:Dropdown({
+    Title = 'Select Seeds to Buy',
+    Section = _call686,
+    Multi = true,
+    Callback = function(_689, _689_2, _689_3, _689_4, _689_5, _689_6) end,
+    Values = {
+        [1] = 'Carrot Seed',
+        [2] = 'Tomato Seed',
+        [3] = 'Potato Seed',
+        [4] = 'Wheat Seed',
+        [5] = 'Pumpkin Seed',
+        [6] = 'Corn Seed',
+        [7] = 'Strawberry Seed',
+        [8] = 'Blueberry Seed',
+        [9] = 'Onion Seed',
+        [10] = 'Garlic Seed',
+        [11] = 'Cabbage Seed',
+        [12] = 'Banana Seed',
+        [13] = 'Apple Seed',
+        [14] = 'Plum Seed',
+        [15] = 'Cherry Seed',
+        [16] = 'Mushroom Seed',
+        [17] = 'Rose Seed',
+        [18] = 'Dandelion Seed',
+        [19] = 'Bellpepper Seed',
+        [20] = 'Birch Seed',
+        [21] = 'Orange Seed',
+        [22] = 'Olive Seed',
+        [23] = 'Sunpetal Seed',
+        [24] = 'Goldenberry Seed',
+        [25] = 'Amberpine Seed',
+        [26] = 'Emberwood Seed',
+        [27] = 'Dawn Blossom Seed',
+        [28] = 'Dawnfruit Seed',
+        [29] = 'Beetroot Seed',
+        [30] = 'Bamboo Seed',
+        [31] = 'Mango Seed',
+        [32] = 'Biohazard Melon Seed',
+        [33] = 'Lablush Berry Seed',
+        [34] = 'Starvine Seed',
+        [35] = 'Radiant Petal Seed',
+        [36] = 'Octobranch Seed',
+    },
+})
+_call684:Button({
+    Callback = function(_692, _692_2, _692_3, _692_4, _692_5) end,
+    Title = 'Buy Seeds Now',
+    Section = _call686,
+})
+
+local _call694 = _call684:Toggle({
+    Title = 'Auto Buy Seeds',
+    Section = _call686,
+    Flag = 'AutoSeed',
+    Callback = function(_695) end,
+    Value = false,
+})
+
+fenv.AutoSeedToggle = _call694
+
+_call514:Register('AutoSeed', _call694)
+
+local _call699 = _call684:Section({
+    Title = 'Auto Buy Gear',
+})
+
+fenv.ShopGearSection = _call699
+
+_call684:Dropdown({
+    Title = 'Select Gear to Buy',
+    Section = _call699,
+    Multi = true,
+    Callback = function(_702, _702_2) end,
+    Values = {
+        [1] = 'Watering Can',
+        [2] = 'Basic Sprinkler',
+        [3] = 'Harvest All',
+        [4] = 'Turbo Sprinkler',
+        [5] = 'Favorite Tool',
+        [6] = 'Super Sprinkler',
+    },
+})
+_call684:Button({
+    Callback = function(_705, _705_2, _705_3) end,
+    Title = 'Buy Gear Now',
+    Section = _call699,
+})
+
+local _call707 = _call684:Toggle({
+    Title = 'Auto Buy Gear',
+    Section = _call699,
+    Flag = 'AutoGear',
+    Callback = function(_708) end,
+    Value = false,
+})
+
+fenv.AutoGearToggle = _call707
+
+_call514:Register('AutoGear', _call707)
+
+local _call712 = _call684:Section({
+    Title = 'Sell Items',
+})
+
+fenv.ShopSellSection = _call712
+
+local _call714 = _call684:Dropdown({
+    Title = 'Sell Mode',
+    Section = _call712,
+    Flag = 'SellMode',
+    Value = 'Hand (Filtered)',
+    Callback = function(_715, _715_2, _715_3, _715_4) end,
+    Values = {
+        [1] = 'All',
+        [2] = 'Hand (Filtered)',
+    },
+})
+
+fenv.SellModeDD = _call714
+
+_call514:Register('SellMode', _call714)
+_call684:Dropdown({
+    Title = 'Plant Type',
+    Section = _call712,
+    Multi = true,
+    Callback = function(_720, _720_2, _720_3, _720_4, _720_5) end,
+    Values = {[1] = _Name601},
+})
+
+local _call722 = _call684:Dropdown({
+    Value = {
+        [1] = 'Lush',
+    },
+    Title = 'Trait',
+    Section = _call712,
+    Flag = 'SellTrait',
+    Multi = true,
+    Callback = function(_723) end,
+    Values = {
+        [1] = 'None',
+        [2] = 'Unripe',
+        [3] = 'Ripened',
+        [4] = 'Lush',
+    },
+})
+
+fenv.SellTraitDD = _call722
+
+_call514:Register('SellTrait', _call722)
+
+local _call727 = _call684:Dropdown({
+    Value = {
+        [1] = 'None',
+    },
+    Title = 'Mutation',
+    Section = _call712,
+    Flag = 'SellMut',
+    Multi = true,
+    Callback = function(_728) end,
+    Values = {
+        [1] = 'None',
+        [2] = 'Soaked',
+        [3] = 'Foggy',
+        [4] = 'Chilled',
+        [5] = 'Flooded',
+        [6] = 'Snowy',
+        [7] = 'Sandy',
+        [8] = 'Frostbit',
+        [9] = 'Mossy',
+        [10] = 'Shocked',
+        [11] = 'Muddy',
+        [12] = 'Starstruck',
+    },
+})
+
+fenv.SellMutDD = _call727
+
+_call514:Register('SellMut', _call727)
+
+local _call732 = _call684:Dropdown({
+    Value = {
+        [1] = 'None',
+    },
+    Title = 'Variant',
+    Section = _call712,
+    Flag = 'SellVar',
+    Multi = true,
+    Callback = function(_733, _733_2, _733_3) end,
+    Values = {
+        [1] = 'None',
+        [2] = 'Silver',
+        [3] = 'Gold',
+    },
+})
+
+fenv.SellVarDD = _call732
+
+_call514:Register('SellVar', _call732)
+
+local _call737 = _call684:Dropdown({
+    Value = {
+        [1] = 'Common',
+        [2] = 'Uncommon',
+        [3] = 'Rare',
+        [4] = 'Epic',
+        [5] = 'Legendary',
+    },
+    Title = 'Rarity',
+    Section = _call712,
+    Flag = 'SellRar',
+    Multi = true,
+    Callback = function(_738, _738_2, _738_3) end,
+    Values = {
+        [1] = 'Common',
+        [2] = 'Uncommon',
+        [3] = 'Rare',
+        [4] = 'Epic',
+        [5] = 'Legendary',
+    },
+})
+
+fenv.SellRarDD = _call737
+
+_call514:Register('SellRar', _call737)
+_call684:Button({
+    Callback = function(_743) end,
+    Title = 'Sell Now',
+    Section = _call712,
+})
+
+local _call745 = _call684:Toggle({
+    Title = 'Auto Sell',
+    Section = _call712,
+    Flag = 'AutoSell',
+    Callback = function(_746, _746_2, _746_3) end,
+    Value = false,
+})
+
+fenv.AutoSellToggle = _call745
+
+_call514:Register('AutoSell', _call745)
+
+local _call750 = _call684:Section({
+    Title = 'Inventory - Auto Favorite',
+})
+
+fenv.FavoriteSection = _call750
+
+_call684:Dropdown({
+    Title = 'Plant Type',
+    Section = _call750,
+    Multi = true,
+    Callback = function(_753, _753_2, _753_3, _753_4) end,
+    Values = {[1] = _Name601},
+})
+_call684:Dropdown({
+    Title = 'Trait',
+    Section = _call750,
+    Multi = true,
+    Callback = function(_756, _756_2, _756_3, _756_4) end,
+    Values = {
+        [1] = 'None',
+        [2] = 'Unripe',
+        [3] = 'Ripened',
+        [4] = 'Lush',
+    },
+})
+_call684:Dropdown({
+    Title = 'Mutation',
+    Section = _call750,
+    Multi = true,
+    Callback = function(_759) end,
+    Values = {
+        [1] = 'None',
+        [2] = 'Soaked',
+        [3] = 'Foggy',
+        [4] = 'Chilled',
+        [5] = 'Flooded',
+        [6] = 'Snowy',
+        [7] = 'Sandy',
+        [8] = 'Frostbit',
+        [9] = 'Mossy',
+        [10] = 'Shocked',
+        [11] = 'Muddy',
+        [12] = 'Starstruck',
+    },
+})
+_call684:Dropdown({
+    Title = 'Variant',
+    Section = _call750,
+    Multi = true,
+    Callback = function(_762, _762_2, _762_3) end,
+    Values = {
+        [1] = 'None',
+        [2] = 'Silver',
+        [3] = 'Gold',
+    },
+})
+_call684:Dropdown({
+    Title = 'Rarity',
+    Section = _call750,
+    Multi = true,
+    Callback = function(_765) end,
+    Values = {
+        [1] = 'Common',
+        [2] = 'Uncommon',
+        [3] = 'Rare',
+        [4] = 'Epic',
+        [5] = 'Legendary',
+    },
+})
+_call684:Button({
+    Callback = function(_768, _768_2) end,
+    Title = 'Favorite Now',
+    Section = _call750,
+})
+
+local _call770 = _call684:Toggle({
+    Title = 'Auto Favorite',
+    Section = _call750,
+    Flag = 'AutoFav',
+    Callback = function(_771, _771_2, _771_3) end,
+    Value = false,
+})
+
+fenv.AutoFavToggle = _call770
+
+_call514:Register('AutoFav', _call770)
+
+local _call775 = _call684:Section({
+    Title = 'Redeem Code',
+})
+
+fenv.RedeemSection = _call775
+
+_call684:Button({
+    Callback = function(_778, _778_2, _778_3, _778_4, _778_5) end,
+    Title = 'Redeem All Codes',
+    Section = _call775,
+})
+
+local _call780 = _call511:Tab({
+    Color = _call51,
+    Title = 'Teleport',
+    Icon = 'solar:map-point-bold',
+})
+
+fenv.TeleportTab = _call780
+
+local _call782 = _call780:Section({
+    Title = 'Misc',
+})
+
+fenv.TpMiscSection = _call782
+
+local _call784 = _call780:Dropdown({
+    Title = 'Teleport Type',
+    Section = _call782,
+    Flag = 'TeleportType',
+    Value = 'Instant',
+    Callback = function(_785, _785_2, _785_3, _785_4, _785_5, _785_6) end,
+    Values = {
+        [1] = 'Instant',
+        [2] = 'Tween',
+    },
+})
+
+fenv.TeleportTypeDD = _call784
+
+_call514:Register('TeleportType', _call784)
+
+local _call789 = _call780:Section({
+    Title = 'Player Teleport',
+})
+
+fenv.PlayerTpSection = _call789
+fenv.refreshPlayerList = function(_790) end
+
+local _call792 = _call780:Dropdown({
+    Title = 'Select Player',
+    Section = _call789,
+    Value = 'Loading...',
+    Callback = function(_793, _793_2) end,
+    Values = {
+        [1] = 'Loading...',
+    },
+})
+
+fenv.playerDropdown = _call792
+
+_call780:Button({
+    Callback = function(_796) end,
+    Title = 'Refresh Player List',
+    Section = _call789,
+})
+_call780:Button({
+    Callback = function() end,
+    Title = 'Teleport to Player',
+    Section = _call789,
+})
+_call780:Toggle({
+    Callback = function(_802, _802_2, _802_3, _802_4, _802_5) end,
+    Title = 'Follow Player (Real-time)',
+    Section = _call789,
+})
+
+local _call804 = _call511:Tab({
+    Color = _call51,
+    Title = 'Server',
+    Icon = 'solar:server-bold',
+})
+
+fenv.ServerTab = _call804
+
+_call804:Section({
+    Title = 'Server Information',
+})
+
+local _call808 = _call804:Paragraph({
+    Title = 'Current Server ID',
+    Desc = 'Loading...',
+})
+
+fenv.serverIdDisplay = _call808
+
+task.spawn(function(_811) end)
+_call804:Button({
+    Title = 'Copy Server ID',
+    Callback = function(_814) end,
+})
+_call804:Section({
+    Title = 'Server Actions',
+})
+_call804:Button({
+    Title = 'Rejoin Server',
+    Callback = function() end,
+})
+_call804:Button({
+    Title = 'Server Hop (Random)',
+    Callback = function(_822, _822_2, _822_3, _822_4) end,
+})
+_call804:Button({
+    Title = 'Server Hop (Lower Player Count)',
+    Callback = function(_825, _825_2, _825_3, _825_4) end,
+})
+_call804:Section({
+    Title = 'Join Server',
+})
+_call804:Input({
+    Placeholder = 'Enter server ID...',
+    Title = 'Server ID',
+    Callback = function(_830, _830_2, _830_3, _830_4, _830_5, _830_6) end,
+})
+
+local _call832 = _call511:Tab({
+    Color = _call51,
+    Title = 'Misc',
+    Icon = 'solar:settings-bold',
+})
+
+fenv.MiscTab = _call832
+
+local _call834 = _call832:Section({
+    Title = 'Character',
+})
+
+fenv.CharSection = _call834
+
+_call832:Slider({
+    Title = 'Walk Speed',
+    Section = _call834,
+    Value = {
+        Min = 16,
+        Default = 16,
+        Max = 200,
+    },
+    Step = 1,
+    Callback = function(_837, _837_2, _837_3) end,
+})
+_call832:Slider({
+    Title = 'Jump Power',
+    Section = _call834,
+    Value = {
+        Min = 50,
+        Default = 50,
+        Max = 200,
+    },
+    Step = 1,
+    Callback = function(_840, _840_2, _840_3, _840_4, _840_5, _840_6) end,
+})
+
+local _call842 = _call832:Section({
+    Title = 'Fly',
+})
+
+fenv.FlySection = _call842
+
+local _call844 = _call832:Toggle({
+    Title = 'Enable Fly',
+    Section = _call842,
+    Flag = 'FlyEnabled',
+    Callback = function(_845, _845_2, _845_3, _845_4, _845_5) end,
+    Value = false,
+})
+
+fenv.FlyToggle = _call844
+
+_call514:Register('FlyEnabled', _call844)
+
+local _call849 = _call832:Slider({
+    Title = 'Fly Speed',
+    Section = _call842,
+    Flag = 'FlySpeed',
+    Callback = function(_850, _850_2, _850_3, _850_4, _850_5, _850_6) end,
+    Step = 1,
+    Value = {
+        Min = 10,
+        Default = 50,
+        Max = 200,
+    },
+})
+
+fenv.FlySpeedSlider = _call849
+
+_call514:Register('FlySpeed', _call849)
+
+local _call854 = _call832:Section({
+    Title = 'Noclip',
+})
+
+fenv.NoclipSection = _call854
+
+local _call856 = _call832:Toggle({
+    Title = 'Enable Noclip',
+    Section = _call854,
+    Flag = 'Noclip',
+    Callback = function(_857, _857_2, _857_3, _857_4) end,
+    Value = false,
+})
+
+fenv.NoclipToggle = _call856
+
+_call514:Register('Noclip', _call856)
+
+local _call861 = _call832:Section({
+    Title = 'Anti AFK',
+})
+
+fenv.AntiAfkSection = _call861
+
+local _call863 = _call832:Toggle({
+    Title = 'Enable Anti AFK',
+    Section = _call861,
+    Flag = 'AntiAfk',
+    Callback = function(_864, _864_2, _864_3) end,
+    Value = false,
+})
+
+fenv.AntiAfkToggle = _call863
+
+_call514:Register('AntiAfk', _call863)
+_LocalPlayer22.CharacterAdded:Connect(function(_870, _870_2) end)
+_call7.PlayerAdded:Connect(function(_874, _874_2, _874_3, _874_4, _874_5) end)
+_call7.PlayerRemoving:Connect(function(_878, _878_2, _878_3) end)
+task.wait(1)
+
+fenv.playerList = {}
+
+for _881, _881_2 in ipairs(_call7:GetPlayers())do
+    local _ = _881_2 == _LocalPlayer22
+end
+
+fenv.selectedPlayer = _881_2.Name
+
+local _ = _call792.Refresh
+local _ = _call792.SetValue
+
+task.spawn(function(_890) end)
+_5:Notify({
+    Icon = 'rbxthumb://type=Asset&id=106624117427771&w=150&h=150',
+    Duration = 5,
+    Title = 'Cyraa Hub',
+    Content = 'Garden Horizons v1.0.6 Loaded!\nby komtolmmek2 script',
+})
+print('Cyraa Hub v1.0.6 - Made by komtolmmek2 script')
